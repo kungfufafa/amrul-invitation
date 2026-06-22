@@ -1,0 +1,290 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 62,
+      "nonEmptyLines": 46,
+      "sections": [
+        {
+          "heading": "Technical baseline",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Stack and runtime",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Asset flow",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Folder map",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Runtime baseline",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Functional baseline to preserve",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Audit limitations",
+          "level": 2,
+          "line": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 32,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "Asset inventory",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Inventory rules and exclusions",
+          "level": 3,
+          "line": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "Broken and missing assets",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Runtime validation note",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Not classified as broken",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 30,
+      "nonEmptyLines": 24,
+      "sections": [
+        {
+          "heading": "Unused and duplicate findings",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Duplicate-hash evidence",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Retained deliberately",
+          "level": 2,
+          "line": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "sections": [
+        {
+          "heading": "CDN migration analysis",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Security and CSP conditions",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 21,
+      "sections": [
+        {
+          "heading": "Findings register",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 71,
+      "nonEmptyLines": 56,
+      "sections": [
+        {
+          "heading": "Remediation plan",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PR-1 — Baseline and safety net",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "PR-2 — Repair confirmed broken assets",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "PR-3 — Remove only validated dead files",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "PR-4 — Remove unused loads and stale comments",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "PR-5 — Controlled CDN hardening/migration",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "PR-6 — Establish an asset pipeline only if needed",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "PR-7 — Final validation and metadata review",
+          "level": 2,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "Executive summary",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Biggest risks",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Quick wins, in order",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Unsafe areas to touch without extra evidence",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

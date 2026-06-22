@@ -1,0 +1,35 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'resource:media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp' has no edges (orphan)",
+    "Node 'file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp' has no edges (orphan)",
+    "Node 'file:plugin/slick/slick.css' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 78,
+    "totalEdges": 96,
+    "totalLayers": 7,
+    "tourSteps": 10,
+    "nodeTypes": {
+      "document": 8,
+      "config": 2,
+      "file": 16,
+      "resource": 22,
+      "function": 30
+    },
+    "edgeTypes": {
+      "documents": 18,
+      "related": 11,
+      "configures": 2,
+      "depends_on": 22,
+      "contains": 30,
+      "calls": 13
+    }
+  }
+}

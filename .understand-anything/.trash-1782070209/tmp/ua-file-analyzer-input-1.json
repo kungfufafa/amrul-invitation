@@ -1,0 +1,23 @@
+{
+  "projectRoot": "/Users/apriansyahrs/Documents/Code/amrul-wi",
+  "batchFiles": [
+    {"path": "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md", "language": "markdown", "sizeLines": 62, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md", "language": "markdown", "sizeLines": 32, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md", "language": "markdown", "sizeLines": 19, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md", "language": "markdown", "sizeLines": 30, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md", "language": "markdown", "sizeLines": 26, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md", "language": "markdown", "sizeLines": 22, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md", "language": "markdown", "sizeLines": 71, "fileCategory": "docs"},
+    {"path": "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md", "language": "markdown", "sizeLines": 36, "fileCategory": "docs"}
+  ],
+  "batchImportData": {
+    "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md": [],
+    "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md": [],
+    "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md": [],
+    "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md": [],
+    "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md": [],
+    "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md": [],
+    "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md": [],
+    "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md": []
+  }
+}

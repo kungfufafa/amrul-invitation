@@ -15,17 +15,17 @@
     <link rel="preconnect" href="https://vjs.zencdn.net" crossorigin>
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Alyssa &amp; Rayhan - Amrul.id">
+    <meta name="title" content="Hani &amp; Amrul - #HaniAmrulSideBySide">
     <meta name="description"
-        content="Hi, You&#039;re invited to our wedding ceremony - Alyssa &amp; Rayhan Wedding - Saturday, June 06th 2026">
+        content="Hi, You&#039;re invited to our wedding ceremony - Hani &amp; Amrul Wedding - Minggu, 05 Juli 2026">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Amrul.id">
-    <meta property="og:url" content="https://alyssarayhan.amrul.id" />
-    <meta property="og:title" content="Alyssa &amp; Rayhan - Amrul.id" />
+    <meta property="og:site_name" content="#HaniAmrulSideBySide">
+    <meta property="og:url" content="https://haniamrulsidebyside.my.id" />
+    <meta property="og:title" content="Hani &amp; Amrul - #HaniAmrulSideBySide" />
     <meta property="og:description"
-        content="Hi, You&#039;re invited to our wedding ceremony - Alyssa &amp; Rayhan Wedding - Saturday, June 06th 2026" />
+        content="Hi, You&#039;re invited to our wedding ceremony - Hani &amp; Amrul Wedding - Minggu, 05 Juli 2026" />
     <meta property="og:image"
         content="./media/external/thumb-md-890975-1200-630-1777280246-137908a8865c615f9cac024a.jpg" />
     <meta property="og:locale" content="in_ID">
@@ -33,10 +33,10 @@
     <!-- Twitter -->
     <meta property="twitter:card"
         content="./media/external/thumb-md-890975-1200-630-1777280246-137908a8865c615f9cac024a.jpg">
-    <meta property="twitter:url" content="https://alyssarayhan.amrul.id">
-    <meta property="twitter:title" content="Alyssa &amp; Rayhan - Amrul.id">
+    <meta property="twitter:url" content="https://haniamrulsidebyside.my.id">
+    <meta property="twitter:title" content="Hani &amp; Amrul - #HaniAmrulSideBySide">
     <meta property="twitter:description"
-        content="Hi, You&#039;re invited to our wedding ceremony - Alyssa &amp; Rayhan Wedding - Saturday, June 06th 2026">
+        content="Hi, You&#039;re invited to our wedding ceremony - Hani &amp; Amrul Wedding - Minggu, 05 Juli 2026">
     <meta property="twitter:image"
         content="./media/external/thumb-md-890975-1200-630-1777280246-137908a8865c615f9cac024a.jpg">
 
@@ -45,7 +45,7 @@
     <script src="./src/jquery.js" defer></script>
 
 
-    <title>Alyssa &amp; Rayhan | Amrul</title>
+    <title>Hani &amp; Amrul | #HaniAmrulSideBySide</title>
 
     <!-- Fonts Google -->
 
@@ -492,6 +492,287 @@
             --bg-tc: url("../../media/template/exclusive/alsa/original/Orn-62.png");
             --bg-pp: url("../../media/template/exclusive/alsa/original/bg-pp.png");
         }
+
+        .wedding-gift-bank-wrap .bank-item-wrap--open .bank-item {
+            display: flex !important;
+            margin-top: 12px;
+        }
+
+        .wedding-gift-bank-wrap .bank-btn-top.is-static {
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .wedding-gift-bank-wrap .bank-btn-top.is-static .ph-control {
+            display: none;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-entry {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 100%;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-entry + .bank-account-entry {
+            border-top: 1px solid var(--background-tertiary);
+            margin-top: 12px;
+            padding-top: 12px;
+        }
+
+        /* Keep the account details readable when every bank is expanded. */
+        .wedding-gift-outer {
+            padding: clamp(48px, 11vw, 120px) 0 clamp(176px, 24vw, 320px);
+        }
+
+        .wedding-gift-outer > .ornaments-wrapper {
+            z-index: 0;
+        }
+
+        .wedding-gift-wrap {
+            overflow: visible;
+            z-index: 1;
+        }
+
+        .wedding-gift-body-wrap {
+            padding-inline: clamp(16px, 5.5vw, 56px);
+        }
+
+        .wedding-gift-bank-wrap {
+            gap: clamp(24px, 4vw, 40px);
+        }
+
+        .wedding-gift-bank-wrap .bank-item-wrap {
+            display: grid;
+            gap: 12px;
+        }
+
+        .wedding-gift-bank-wrap .bank-item-wrap--open .bank-item {
+            margin-top: 0;
+            padding: clamp(20px, 4vw, 32px);
+        }
+
+        .wedding-gift-bank-wrap .bank-detail {
+            gap: 0;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-entry {
+            gap: 8px;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-entry + .bank-account-entry {
+            margin-top: 16px;
+            padding-top: 16px;
+        }
+
+        .wedding-gift-bank-wrap .bank-copy {
+            align-items: center;
+            align-self: center;
+            box-sizing: border-box;
+            flex: 0 0 28px;
+            height: 28px;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            width: 28px;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-number-wrap {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-number-label {
+            display: block;
+            margin: 0;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-value {
+            align-items: center;
+            display: flex;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        .wedding-gift-bank-wrap .bank-account-number {
+            display: block;
+            line-height: 1.25;
+            word-break: normal;
+        }
+
+        .wedding-gift-bank-wrap .bank-copy > i {
+            display: block;
+            font-size: 13px;
+            line-height: 1;
+        }
+
+        .music-outer .music-box {
+            align-items: center;
+            animation: none !important;
+            background-color: var(--button-background-secondary);
+            background-image: none !important;
+            border: 2px solid rgba(var(--button-text-primary-rgb), 0.85);
+            border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(var(--button-background-primary-rgb), 0.22);
+            cursor: pointer;
+            display: inline-flex;
+            height: 48px;
+            justify-content: center;
+            opacity: 1;
+            padding: 0;
+            position: relative;
+            transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+            width: 48px;
+        }
+
+        .music-outer .music-box:hover {
+            transform: scale(1.05);
+        }
+
+        .music-outer .music-box:active {
+            transform: scale(0.96);
+        }
+
+        .music-outer .music-box:focus-visible {
+            outline: 2px solid var(--button-background-primary);
+            outline-offset: 3px;
+        }
+
+        .music-outer .music-box:active,
+        .music-outer .music-box:focus {
+            background-color: var(--button-background-secondary) !important;
+            box-shadow: 0 2px 10px rgba(var(--button-background-primary-rgb), 0.22);
+            opacity: 1 !important;
+        }
+
+        .music-outer .music-box.playing {
+            animation: none !important;
+            background-color: var(--button-background-primary);
+            border-color: var(--button-background-primary);
+        }
+
+        .music-outer .music-box.playing:active,
+        .music-outer .music-box.playing:focus {
+            background-color: var(--button-background-primary) !important;
+        }
+
+        .music-box .music-icon {
+            display: block;
+            fill: var(--button-text-primary);
+            height: 20px;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+        }
+
+        .music-box .music-icon--pause,
+        .music-box.playing .music-icon--play {
+            display: none;
+        }
+
+        .music-box .music-icon--play,
+        .music-box.playing .music-icon--pause {
+            display: block;
+        }
+
+        /* Personal recipient block: quiet salutation, prominent guest name. */
+        .top-cover .inner .details,
+        .kat-page__side-to-side .primary-pane .inner .details {
+            align-items: center;
+        }
+
+        [data-guest-greeting][hidden] {
+            display: none !important;
+        }
+
+        .wedding-wish-wrap[hidden] {
+            display: none !important;
+        }
+
+        [data-guest-greeting] {
+            align-items: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            margin-inline: auto;
+            max-width: min(82vw, 24rem);
+            text-align: center;
+            text-wrap: balance;
+            width: 100%;
+        }
+
+        [data-guest-greeting] .guest-greeting-prefix,
+        [data-guest-greeting] .guest-greeting-title,
+        [data-guest-greeting] .guest-greeting-name {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        [data-guest-greeting] .guest-greeting-prefix {
+            font-size: clamp(0.68rem, 1.8vw, 0.8rem);
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            line-height: 1.2;
+            opacity: 0.78;
+            padding-inline-start: 0.12em;
+            text-transform: uppercase;
+        }
+
+        [data-guest-greeting] .guest-greeting-title {
+            font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+            letter-spacing: 0.015em;
+            line-height: 1.2;
+            margin-top: clamp(0.35rem, 0.8vw, 0.5rem);
+        }
+
+        [data-guest-greeting] .guest-greeting-name {
+            font-family: var(--body-text-family);
+            font-size: clamp(1.45rem, 3.6vw, 2.25rem);
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+            line-height: 1.1;
+            margin-top: clamp(0.45rem, 1vw, 0.65rem);
+            max-width: none;
+            overflow-wrap: anywhere;
+        }
+
+        .kat-page__side-to-side .primary-pane .inner .details {
+            padding-bottom: clamp(6.5rem, 14vw, 12rem);
+            padding-top: clamp(3.5rem, 8vw, 6rem);
+        }
+
+        .top-cover .inner .details {
+            padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
+            padding-top: clamp(4.5rem, 9vw, 7rem);
+        }
+
+        section.top-cover .inner .details .link-wrap {
+            margin-top: clamp(2.5rem, 7vw, 4rem);
+        }
+
+        @media (max-width: 600px) {
+            .music-outer .music-box {
+                height: 44px;
+                width: 44px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .wedding-gift-bank-wrap .bank-account-number-label {
+                min-width: 0;
+            }
+
+            .wedding-gift-bank-wrap .bank-account-number {
+                overflow-wrap: anywhere;
+            }
+        }
     </style>
 
 </head>
@@ -559,16 +840,15 @@
                 <div class=" head-wrap" data-aos="zoom-in" data-aos-duration="3500" data-aos-delay="3500">
 
                     <h1 class="primary-pane-title" data-aos="zoom-in" data-aos-duration="3500" data-aos-delay="3500">
-                        Alyssa <br />
+                        Hani <br />
                         &amp; <br />
-                        Rayhan</h1>
+                        Amrul</h1>
 
                 </div>
 
                 <div class=" details" data-aos="fade-up" data-aos-duration="3500" data-aos-delay="3500">
 
-                    <p data-aos="fade-up" data-aos-duration="3500" data-aos-delay="3500">
-                        Hai&nbsp;Amrul </p>
+                    <p data-aos="fade-up" data-aos-duration="3500" data-aos-delay="3500" data-guest-greeting hidden></p>
 
                 </div>
 
@@ -785,15 +1065,14 @@
                     <div data-aos="zoom-in" data-aos-duration="3400" data-aos-delay="2500">
                     </div>
                     <h1 class="top-cover-title no-scrollbar" data-aos="zoom-in" data-aos-duration="3400"
-                        data-aos-delay="2500" id="trig-tc">Alyssa <br />
+                        data-aos-delay="2500" id="trig-tc">Hani <br />
                         &amp; <br />
-                        Rayhan</h1>
+                        Amrul</h1>
                 </div>
 
                 <div class=" details">
 
-                    <p data-aos="fade-up" data-aos-duration="3400" data-aos-delay="2500" style="">
-                        Hai&nbsp;Amrul </p>
+                    <p data-aos="fade-up" data-aos-duration="3400" data-aos-delay="2500" data-guest-greeting hidden></p>
 
 
                     <div class="link-wrap" data-aos="fade-up" data-aos-duration="3400" data-aos-delay="2500">
@@ -1002,12 +1281,12 @@
                 <div class="head" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="3000">
                     <div class="logo-wrap" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="3000">
                         <img loading="lazy"
-                            src="./media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp"
+                            src="./media/external/ha-monogram-antique-gold.png"
                             alt="" class="logo">
                     </div>
                     <p data-aos="fade-down" data-aos-duration="3000" data-aos-delay="3000">Wedding Invitation</p>
-                    <h1 data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="3000">Alyssa & Rayhan</h1>
-                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">#RayOfLoveForAllysa</p>
+                    <h1 data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="3000">Hani & Amrul</h1>
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">#HaniAmrulSideBySide</p>
                 </div>
 
                 <div class="body highlight" data-aos="zoom-in-up" data-aos-duration="2900" data-aos-delay="700">
@@ -1295,12 +1574,13 @@
                         </div>
                         <div class="couple-details">
 
-                            <h2 class="couple-name" data-aos="fade-up" data-aos-duration="1000">Rayhan Adrian</h1>
+                            <h2 class="couple-name" data-aos="fade-up" data-aos-duration="1000"
+                                style="font-size: clamp(1.4rem, 6vw, 2.4rem); line-height: 1.15; word-break: break-word; hyphens: auto;">Amrullah Ibnus Salam, M.B.A.</h2>
                                 <p class="couple-parents" data-aos="fade-up" data-aos-duration="1000">Putra dari Bapak
-                                    Herry &amp; Ibu Rini Siswanto</p>
+                                    Salam &amp; Ibu Irwati</p>
                                 <div class="couple-link-wrap" data-aos="fade-up" data-aos-duration="1000">
-                                    <a href="https://www.instagram.com/amrul" target="_blank" class="couple-link"><i
-                                            class="fab fa-instagram"></i> @amrul</a>
+                                    <a href="https://www.instagram.com/amrullah_ibnussalam/" target="_blank" class="couple-link"><i
+                                            class="fab fa-instagram"></i> @amrullah_ibnussalam</a>
                                 </div>
                         </div>
                     </div>
@@ -1441,12 +1721,13 @@
                         </div>
                         <div class="couple-details">
 
-                            <h2 class="couple-name" data-aos="fade-up" data-aos-duration="1000">Alyssa Nathania</h2>
+                            <h2 class="couple-name" data-aos="fade-up" data-aos-duration="1000"
+                                style="font-size: clamp(1.4rem, 6vw, 2.4rem); line-height: 1.15; word-break: break-word; hyphens: auto;">Hanisyah Febrianti Safitri, B.Sc,</h2>
                             <p class="couple-parents" data-aos="fade-up" data-aos-duration="1000">Putri dari Bapak
-                                Januar &amp; Ibu Renata</p>
+                                Iskandar &amp; ibu Nining Rosyulianti N</p>
                             <div class="couple-link-wrap" data-aos="fade-up" data-aos-duration="1000">
-                                <a href="https://www.instagram.com/amrul" target="_blank" class="couple-link"><i
-                                        class="fab fa-instagram"></i> @amrul</a>
+                                <a href="https://www.instagram.com/hanisyafs/" target="_blank" class="couple-link"><i
+                                        class="fab fa-instagram"></i> @hanisyafs</a>
                             </div>
                         </div>
                     </div>
@@ -1486,7 +1767,7 @@
                             target="_blank">
                             <img loading="lazy"
                                 src="./media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp"
-                                alt="freepik_edit_Asian-Indonesian-bride-and-groom-Alyssa-Nathania-a1.jpg">
+                                alt="freepik_edit_Asian-Indonesian-bride-and-groom-Hani-a1.jpg">
                         </a>
                         <a data-aos="zoom-in" data-aos-duration="1000"
                             href="./media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp"
@@ -1690,7 +1971,7 @@
                     </div>
                     <div class="add-to-calendar-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
                         <a class="add-to-calendar"
-                            href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Alyssa+%26+Rayhan+Wedding&amp;dates=20260606T110000/20260606T140000&amp;location=Gedung+Juang+45+Bekasi+%7C+Jl.+Sultan+Hasanudin+No.39%2C+Mekarsari%2C+Kec.+Tambun+Sel.%2C+Kabupaten+Bekasi%2C+Jawa+Barat+17510%2C+Indonesia+%7C+Kabupaten+Bekasi&amp;details=Hi%2C+You%27re+invited+to+our+wedding+ceremony+%7C+Alyssa+%26+Rayhan+Wedding+%7C+Saturday%2C+June+06th+2026"
+                            href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Hani+%26+Amrul+Wedding&amp;dates=20260705T080000/20260705T150000&amp;location=Villa+Putih+%7C+Jl.+Raya+Tangkuban+Parahu+No.+315%2C+RT+02%2FRW+11%2C+Cibogo%2C+Kecamatan+Lembang%2C+Kabupaten+Bandung+Barat%2C+Jawa+Barat+40391%2C+Indonesia+%7C+Kabupaten+Bandung+Barat&amp;details=Hi%2C+You%27re+invited+to+our+wedding+ceremony+%7C+Hani+%26+Amrul+Wedding+%7C+Minggu%2C+05+Juli+2026+%7C+Akad+08.00+WIB+%7C+Resepsi+11.00+%E2%80%93+15.00+WIB"
                             target="_blank" rel="nofollow" id="addToCalendar">
                             Add to Calendar </a>
                     </div>
@@ -1838,9 +2119,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h3 class="event-day" data-aos="fade-up" data-aos-duration="1000">Saturday, </h3>
-                                <h3 class="event-day-date" data-aos="fade-up" data-aos-duration="1000">06<sup>th</sup>
-                                    June 2026</h3>
+                                <h3 class="event-day" data-aos="fade-up" data-aos-duration="1000">Minggu, </h3>
+                                <h3 class="event-day-date" data-aos="fade-up" data-aos-duration="1000">05<sup>th</sup>
+                                    Juli 2026</h3>
                             </div>
                         </div>
                         <div class="activity-wrap  same-location ">
@@ -2042,26 +2323,26 @@
                                             </svg>
                                         </div>
                                         <h3 class="activity-title" data-aos="zoom-in" data-aos-duration="1000"
-                                            data-aos-delay="450" data-aos-anchor-placement="top-bottom">Akad Nikah</h3>
+                                            data-aos-delay="450" data-aos-anchor-placement="top-bottom">Akad Nikah &amp; Resepsi</h3>
                                         <p class="activity-time" data-aos="zoom-in" data-aos-duration="1000"
-                                            data-aos-delay="450" data-aos-anchor-placement="top-bottom">09:00 - 10:00
+                                            data-aos-delay="450" data-aos-anchor-placement="top-bottom">08.00 WIB &ndash; selesai
                                         </p>
                                     </div>
                                     <div class="activity-details">
-                                        <p class="activity-hall" data-aos="fade-up" data-aos-duration="1000">Gedung
-                                            Juang 45 Bekasi</p>
+                                        <p class="activity-hall" data-aos="fade-up" data-aos-duration="1000">Villa
+                                            Putih</p>
                                         <p class="activity-address" data-aos="fade-up" data-aos-duration="1000">Jl.
-                                            Sultan Hasanudin No.39, Mekarsari, Kec. Tambun Sel., Kabupaten Bekasi, Jawa
-                                            Barat 17510, Indonesia</p>
+                                            Raya Tangkuban Parahu No. 315, RT 02/RW 11, Cibogo, Kecamatan Lembang,
+                                            Kabupaten Bandung Barat, Jawa Barat 40391</p>
                                         <p class="activity-city" data-aos="fade-up" data-aos-duration="1000">Kabupaten
-                                            Bekasi</p>
+                                            Bandung Barat</p>
                                         <div class="activity-link-wrap" data-aos="fade-up" data-aos-duration="1000"><a
-                                                href="https://maps.google.com/?cid=9615712999026299799"
+                                                href="https://maps.google.com/?q=Villa+Putih+Lembang+Jl.+Raya+Tangkuban+Parahu+315"
                                                 class="event-link" target="_blank">View Maps</a></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="activity-item">
+                            <div class="activity-item" style="display:none !important;" aria-hidden="true">
                                 <div class="ornaments-wrapper">
 
                                     <div class="orn-ev-7">
@@ -2262,16 +2543,16 @@
                                             data-aos-delay="450" data-aos-anchor-placement="top-bottom">11:00 - 14:00
                                         </p>
                                     </div>
-                                    <div class="activity-details">
-                                        <p class="activity-hall" data-aos="fade-up" data-aos-duration="1000">Gedung
-                                            Juang 45 Bekasi</p>
+                                    <div class="activity-details" style="display:none;">
+                                        <p class="activity-hall" data-aos="fade-up" data-aos-duration="1000">Villa
+                                            Putih</p>
                                         <p class="activity-address" data-aos="fade-up" data-aos-duration="1000">Jl.
-                                            Sultan Hasanudin No.39, Mekarsari, Kec. Tambun Sel., Kabupaten Bekasi, Jawa
-                                            Barat 17510, Indonesia</p>
+                                            Raya Tangkuban Parahu No. 315, RT 02/RW 11, Cibogo, Kecamatan Lembang,
+                                            Kabupaten Bandung Barat, Jawa Barat 40391</p>
                                         <p class="activity-city" data-aos="fade-up" data-aos-duration="1000">Kabupaten
-                                            Bekasi</p>
+                                            Bandung Barat</p>
                                         <div class="activity-link-wrap" data-aos="fade-up" data-aos-duration="1000"><a
-                                                href="https://maps.google.com/?cid=9615712999026299799"
+                                                href="https://maps.google.com/?q=Villa+Putih+Lembang+Jl.+Raya+Tangkuban+Parahu+315"
                                                 class="event-link" target="_blank">View Maps</a></div>
                                     </div>
                                 </div>
@@ -2321,6 +2602,11 @@
                                             alt="Ornament">
                                     </div>
                                 </div>
+                                <div class="image-wrap" data-aos="zoom-in" data-aos-duration="1900"
+                                    data-aos-delay="1300">
+                                    <img loading="lazy" src="./media/template/exclusive/alsa/original/Orn-64.png"
+                                        alt="Ornament">
+                                </div>
                             </div>
                             <div class="orn-rd-2 left">
                                 <div class="orn-rd-2-1">
@@ -2330,98 +2616,115 @@
                                             alt="Ornament">
                                     </div>
                                 </div>
+                                <div class="image-wrap" data-aos="zoom-in" data-aos-duration="1900"
+                                    data-aos-delay="1300">
+                                    <img loading="lazy" src="./media/template/exclusive/alsa/original/Orn-64.png"
+                                        alt="Ornament">
+                                </div>
                             </div>
                         </div>
                         <div class="bg-rundown"></div>
                         <div class="ornaments-wrapper"></div>
                         <div class="rundown-event">
-                            <h5 class="rundown-event-title">Resepsi</h5>
+                            <h5 class="rundown-event-title">Akad Nikah &amp; Resepsi</h5>
                             <div class="rundown-agenda-list">
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">11:00 AM</p>
+                                    <p class="rundown-agenda-time">07.30</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
-                                        <p class="rundown-agenda-text">Tamu Mulai Hadir & Registrasi</p>
+                                        <p class="rundown-agenda-text">Pembukaan dan Pembacaan Ayat Suci Al Quran</p>
                                     </div>
                                 </div>
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">11:15 AM</p>
+                                    <p class="rundown-agenda-time">08.00</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
+                                        <p class="rundown-agenda-text">Prosesi Akad Nikah sampai selesai</p>
+                                    </div>
+                                </div>
+                                <div class="rundown-agenda">
+                                    <p class="rundown-agenda-time">10:00</p>
+                                    <div class="rundown-divider">
+                                        <div class="rundown-line"></div>
+                                        <div class="rundown-circle"></div>
+                                    </div>
+                                    <div class="rundown-agenda-content">
+                                        <p class="rundown-agenda-text">Foto bersama keluarga inti</p>
+                                    </div>
+                                </div>
+                                <div class="rundown-agenda">
+                                    <p class="rundown-agenda-time">10:30</p>
+                                    <div class="rundown-divider">
+                                        <div class="rundown-line"></div>
+                                        <div class="rundown-circle"></div>
+                                    </div>
+                                    <div class="rundown-agenda-content">
+                                        <p class="rundown-agenda-text">Tamu Mulai Hadir &amp; Registrasi</p>
+                                    </div>
+                                </div>
+                                <div class="rundown-agenda">
+                                    <p class="rundown-agenda-time">11.00</p>
+                                    <div class="rundown-divider">
+                                        <div class="rundown-line"></div>
+                                        <div class="rundown-circle"></div>
+                                    </div>
+                                    <div class="rundown-agenda-content">
                                         <p class="rundown-agenda-text">Pembukaan Acara</p>
                                     </div>
                                 </div>
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">11:45 AM</p>
+                                    <p class="rundown-agenda-time">11.30</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
-                                        <p class="rundown-agenda-text">Penyambutan & foto bersama keluarga inti</p>
-                                    </div>
-                                </div>
-                                <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">12:15 PM</p>
-                                    <div class="rundown-divider">
-                                        <div class="rundown-line"></div>
-                                        <div class="rundown-circle"></div>
-                                    </div>
-                                    <div class="rundown-agenda-content">
-
                                         <p class="rundown-agenda-text">Sambutan keluarga</p>
                                     </div>
                                 </div>
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">12:30 PM</p>
+                                    <p class="rundown-agenda-time">12.30</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
-                                        <p class="rundown-agenda-text">Doa & pemberkatan</p>
+                                        <p class="rundown-agenda-text">Ramah tamah &amp; makan bersama</p>
                                     </div>
                                 </div>
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">12:45 PM</p>
+                                    <p class="rundown-agenda-time">13.00</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
-                                        <p class="rundown-agenda-text"> Ramah tamah & makan bersama</p>
+                                        <p class="rundown-agenda-text">Acara Hiburan</p>
                                     </div>
                                 </div>
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">1:15 PM</p>
+                                    <p class="rundown-agenda-time">13.30</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
                                         <p class="rundown-agenda-text">Sesi foto bersama tamu undangan</p>
                                     </div>
                                 </div>
                                 <div class="rundown-agenda">
-                                    <p class="rundown-agenda-time">2:00 PM</p>
+                                    <p class="rundown-agenda-time">14.00</p>
                                     <div class="rundown-divider">
                                         <div class="rundown-line"></div>
                                         <div class="rundown-circle"></div>
                                     </div>
                                     <div class="rundown-agenda-content">
-
                                         <p class="rundown-agenda-text">Penutup</p>
                                     </div>
                                 </div>
@@ -2431,34 +2734,6 @@
                 </div>
             </div>
         </section>
-
-        <div data-section-order="rsvp">
-            <!-- Reservation -->
-            <section class="rsvp-wrap" id="toRsvp">
-
-                <div class="rsvp-inner">
-                    <div class="ornaments-wrapper"></div>
-                    <div class="rsvp-body-wrapper">
-
-                        <div class="rsvp-head">
-                            <h1 class="rsvp-titles" data-aos="zoom-in" data-aos-duration="1500">
-                                RSVP </h1>
-
-                            <div class="rsvp-info">
-                                <p class="info-text" data-aos="fade-up" data-aos-duration="1000">Please confirm your
-                                    attendance before,</p>
-                                <p class="info-date" data-aos="fade-up" data-aos-duration="1000">Jun 06<sup>th</sup>,
-                                    2026</p>
-                            </div>
-                        </div>
-                        <div class="rsvp-body">
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-        </div>
 
         <!-- STORY -->
         <section class="love-story" data-section-order="love_story">
@@ -2803,121 +3078,114 @@
                                                 <!-- Bank Wrap -->
                                                 <div class="wedding-gift-bank-wrap" data-aos="fade-up"
                                                     data-aos-duration="1600" data-aos-delay="1200">
-                                                    <div class="bank-item-wrap acr-item">
-                                                        <div class="bank-btn-top active">
-                                                            <p class="bank-btop-txt">
-                                                                BANK MANDIRI
-                                                            </p>
+                                                    <div class="bank-item-wrap bank-item-wrap--open">
+                                                        <div class="bank-btn-top active is-static">
+                                                            <p class="bank-btop-txt">BANK BCA</p>
                                                             <i class="ph-fill ph-control"></i>
                                                         </div>
-                                                        <div class="bank-item no-pict-bank" id="savingBook29757">
+                                                        <div class="bank-item no-pict-bank active" id="savingBookBca">
                                                             <div class="ornaments-wrapper"></div>
                                                             <div class="bg-bank"></div>
                                                             <div class="bank-detail-wrap">
-
                                                                 <div class="bank-detail">
-                                                                    <h3 class="bank-name" data-aos="zoom-in"
-                                                                        data-aos-duration="1000" data-aos-delay="700">
-                                                                        BANK MANDIRI (008)</h3>
-                                                                    <div class="bank-account-number-wrap"
-                                                                        data-aos="zoom-in" data-aos-duration="1000"
-                                                                        data-aos-delay="1000">
-                                                                        <p class="bank-account-number-label"
+                                                                    <div class="bank-account-entry">
+                                                                        <p class="bank-account-name-label"
                                                                             data-aos="zoom-in" data-aos-duration="1000"
-                                                                            data-aos-delay="800">Account Number : <span
-                                                                                class="bank-account-number">0011223012</span>
-                                                                        </p>
-                                                                        <button type="button" class="bank-copy"
-                                                                            data-copy="0011223012"><i
-                                                                                class="ph ph-copy-simple"></i></button>
+                                                                            data-aos-delay="900">Account Name : <span
+                                                                                class="bank-account-name">Amrullah Ibnus Salam</span></p>
+                                                                        <div class="bank-account-number-wrap"
+                                                                            data-aos="zoom-in" data-aos-duration="1000"
+                                                                            data-aos-delay="1000">
+                                                                            <p class="bank-account-number-label"
+                                                                                data-aos="zoom-in" data-aos-duration="1000"
+                                                                                data-aos-delay="800">Nomer Rekening :</p>
+                                                                            <div class="bank-account-value">
+                                                                                <span class="bank-account-number">374-178-1245</span>
+                                                                                <button type="button" class="bank-copy"
+                                                                                    aria-label="Salin nomor rekening BCA Amrullah Ibnus Salam"
+                                                                                    data-copy="3741781245"><i
+                                                                                        class="ph ph-copy-simple"></i></button>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    <p class="bank-account-name-label"
-                                                                        data-aos="zoom-in" data-aos-duration="1000"
-                                                                        data-aos-delay="900">Account Name : <span
-                                                                            class="bank-account-name">Allyssa</span></p>
+
+                                                                    <div class="bank-account-entry">
+                                                                        <p class="bank-account-name-label"
+                                                                            data-aos="zoom-in" data-aos-duration="1000"
+                                                                            data-aos-delay="900">Account Name : <span
+                                                                                class="bank-account-name">Hanisyah Febrianti Safitri</span></p>
+                                                                        <div class="bank-account-number-wrap"
+                                                                            data-aos="zoom-in" data-aos-duration="1000"
+                                                                            data-aos-delay="1000">
+                                                                            <p class="bank-account-number-label"
+                                                                                data-aos="zoom-in" data-aos-duration="1000"
+                                                                                data-aos-delay="800">Nomer Rekening :</p>
+                                                                            <div class="bank-account-value">
+                                                                                <span class="bank-account-number">137-074-2720</span>
+                                                                                <button type="button" class="bank-copy"
+                                                                                    aria-label="Salin nomor rekening BCA Hanisyah Febrianti Safitri"
+                                                                                    data-copy="1370742720"><i
+                                                                                        class="ph ph-copy-simple"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="bank-item-wrap acr-item">
-                                                        <div class="bank-btn-top ">
-                                                            <p class="bank-btop-txt">
-                                                                BANK BNI
-                                                            </p>
+                                                    <div class="bank-item-wrap bank-item-wrap--open">
+                                                        <div class="bank-btn-top active is-static">
+                                                            <p class="bank-btop-txt">BANK BRI</p>
                                                             <i class="ph-fill ph-control"></i>
                                                         </div>
-                                                        <div class="bank-item no-pict-bank" id="savingBook29759">
+                                                        <div class="bank-item no-pict-bank active" id="savingBookBri">
                                                             <div class="ornaments-wrapper"></div>
                                                             <div class="bg-bank"></div>
                                                             <div class="bank-detail-wrap">
-
                                                                 <div class="bank-detail">
-                                                                    <h3 class="bank-name" data-aos="zoom-in"
-                                                                        data-aos-duration="1000" data-aos-delay="700">
-                                                                        BANK BNI (009)</h3>
-                                                                    <div class="bank-account-number-wrap"
-                                                                        data-aos="zoom-in" data-aos-duration="1000"
-                                                                        data-aos-delay="1000">
-                                                                        <p class="bank-account-number-label"
+                                                                    <div class="bank-account-entry">
+                                                                        <p class="bank-account-name-label"
                                                                             data-aos="zoom-in" data-aos-duration="1000"
-                                                                            data-aos-delay="800">Account Number : <span
-                                                                                class="bank-account-number">330002301</span>
-                                                                        </p>
-                                                                        <button type="button" class="bank-copy"
-                                                                            data-copy="330002301"><i
-                                                                                class="ph ph-copy-simple"></i></button>
+                                                                            data-aos-delay="900">Account Name : <span
+                                                                                class="bank-account-name">Amrullah Ibnus Salam</span></p>
+                                                                        <div class="bank-account-number-wrap"
+                                                                            data-aos="zoom-in" data-aos-duration="1000"
+                                                                            data-aos-delay="1000">
+                                                                            <p class="bank-account-number-label"
+                                                                                data-aos="zoom-in" data-aos-duration="1000"
+                                                                                data-aos-delay="800">Nomer Rekening :</p>
+                                                                            <div class="bank-account-value">
+                                                                                <span class="bank-account-number">4149-0102-3197-535</span>
+                                                                                <button type="button" class="bank-copy"
+                                                                                    aria-label="Salin nomor rekening BRI Amrullah Ibnus Salam"
+                                                                                    data-copy="414901023197535"><i
+                                                                                        class="ph ph-copy-simple"></i></button>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    <p class="bank-account-name-label"
-                                                                        data-aos="zoom-in" data-aos-duration="1000"
-                                                                        data-aos-delay="900">Account Name : <span
-                                                                            class="bank-account-name">Rayhan</span></p>
+
+                                                                    <div class="bank-account-entry">
+                                                                        <p class="bank-account-name-label"
+                                                                            data-aos="zoom-in" data-aos-duration="1000"
+                                                                            data-aos-delay="900">Account Name : <span
+                                                                                class="bank-account-name">Hanisyah Febrianti Safitri</span></p>
+                                                                        <div class="bank-account-number-wrap"
+                                                                            data-aos="zoom-in" data-aos-duration="1000"
+                                                                            data-aos-delay="1000">
+                                                                            <p class="bank-account-number-label"
+                                                                                data-aos="zoom-in" data-aos-duration="1000"
+                                                                                data-aos-delay="800">Nomer Rekening :</p>
+                                                                            <div class="bank-account-value">
+                                                                                <span class="bank-account-number">2016-0101-4324-508</span>
+                                                                                <button type="button" class="bank-copy"
+                                                                                    aria-label="Salin nomor rekening BRI Hanisyah Febrianti Safitri"
+                                                                                    data-copy="201601014324508"><i
+                                                                                        class="ph ph-copy-simple"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="bank-sender-wrap p-relative" data-aos="fade-up"
-                                                    data-aos-duration="1600" data-aos-delay="1200">
-                                                    <div class="bank-sender-body">
-                                                        <!-- Sender Data -->
-                                                        <div class="wedding-gift-sender-data-wrap">
-                                                            <label>Fill the form below, please</label>
-
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="name"
-                                                                    placeholder="Name" value="Amrul">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control"
-                                                                    name="account_name"
-                                                                    placeholder="Account Owner Name">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <textarea name="message" rows="1" class="form-control"
-                                                                    placeholder="Message"></textarea>
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <input type="number" class="form-control" name="amount"
-                                                                    placeholder="Amount">
-                                                            </div>
-                                                        </div>
-
-                                                        <div style="display: none;">
-                                                            <input type="file" name="picture" id="weddingGiftPicture"
-                                                                data-wgu-preview="#weddingGiftPreview"
-                                                                style="display: none;">
-                                                            <input type="hidden" name="template" value="chitra">
-                                                            <input type="hidden" name="post" value="sendGift">
-                                                        </div>
-
-                                                        <!-- Wedding Gift Page -->
-                                                        <div class="wedding-gift-page-wrap">
-                                                            <button type="button"
-                                                                class="wedding-gift-page wedding-gift__next">Next</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3049,7 +3317,7 @@
 
 
         <!-- WEDDING WISH -->
-        <section class="wedding-wish-wrap" data-template="" data-section-order="wedding_wish">
+        <section class="wedding-wish-wrap" data-template="" data-section-order="wedding_wish" hidden>
 
             <div class="wedding-wish-inner">
                 <div class="wedding-wish-head">
@@ -3068,22 +3336,10 @@
                     <div class="wedding-wish-form">
                         <form action="" class="" method="POST" id="weddingWishForm">
 
-                            <div>
-                                <input type="hidden" name="guestId" value="5203035">
-                                <input type="hidden" name="code" value="940751">
-                                <input type="hidden" name="post" value="newComment">
-                            </div>
-
-                            <div class="form-group guest-name-wrap  hide " data-aos="fade-up" data-aos-duration="1200"
-                                data-aos-delay="200">
-                                <input type="text" name="name" class="form-control guest-name" placeholder="Name"
-                                    value="Amrul">
-                            </div>
-
                             <div class="form-group guest-comment-wrap" data-aos="fade-up" data-aos-duration="1200"
                                 data-aos-delay="300">
                                 <textarea class="form-control guest-comment" name="comment" rows="1"
-                                    placeholder="Give your wish"></textarea>
+                                    placeholder="Give your wish" maxlength="1000" required></textarea>
                             </div>
 
                             <div class="submit-comment-wrap" data-aos="fade-up" data-aos-duration="1200"
@@ -3359,7 +3615,7 @@
                     <div class="orn-footnote-logo">
                         <div class="image-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                             <img loading="lazy"
-                                src="./media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp"
+                                src="./media/external/ha-monogram-antique-gold.png"
                                 alt="" class="logo">
                         </div>
                     </div>
@@ -3368,10 +3624,10 @@
                 <div class="content">
                     <p class="top-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Wedding
                         Invitation</p>
-                    <h2 class="footnote-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Alyssa
-                        &<br>Rayhan</h2>
+                    <h2 class="footnote-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Hani
+                        &<br>Amrul</h2>
                     <p class="bottom-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                        #RayOfLoveForAllysa</p>
+                        #HaniAmrulSideBySide</p>
                 </div>
 
             </div>
@@ -3387,7 +3643,14 @@
 
 <!-- MUSIC -->
 <section class="music-outer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-    <div class="music-box auto" id="music-box"></div>
+    <button type="button" class="music-box auto" id="music-box" aria-label="Putar musik" aria-pressed="false">
+        <svg class="music-icon music-icon--play" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 7v10l9-5-9-5Z" />
+        </svg>
+        <svg class="music-icon music-icon--pause" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 7h3v10H8V7Zm5 0h3v10h-3V7Z" />
+        </svg>
+    </button>
 </section>
 <script>
     // Music
@@ -3397,10 +3660,10 @@
     };
 
     // Event
-    var EVENT = 1780718400;
+    var EVENT = 1783213200;
 
     // Banks
-    var BANK_OPTIONS = [{ "id": 29757, "title": "BANK MANDIRI", "credential": "0011223012" }, { "id": 29759, "title": "BANK BNI", "credential": "330002301" }];
+    var BANK_OPTIONS = [{ "id": "Bca", "title": "BANK BCA", "credential": "3741781245" }, { "id": "Bri", "title": "BANK BRI", "credential": "414901023197535" }];
 
     // RSVP
     var RSVP = {
@@ -3422,8 +3685,8 @@
     {
         'position': 'MAIN',
         'details': {
-            'desktop': "<div class=\"picture desktop\">\n                                            <img loading="lazy" src=\"./media/external/gif-890941-1777279314-0f8725f288f62616d2114684.gif\" alt=\"\">\n                                        <\/div>",
-            'mobile': "<div class=\"picture mobile\">\n                                            <img loading="lazy" src=\"./media/external/gif-890941-1777279314-0f8725f288f62616d2114684.gif\" alt=\"\">\n                                        <\/div>"
+            'desktop': "<div class=\"picture desktop\">\n                                            <img loading=\"lazy\" src=\"./media/external/gif-890941-1777279314-0f8725f288f62616d2114684.gif\" alt=\"\">\n                                        <\/div>",
+            'mobile': "<div class=\"picture mobile\">\n                                            <img loading=\"lazy\" src=\"./media/external/gif-890941-1777279314-0f8725f288f62616d2114684.gif\" alt=\"\">\n                                        <\/div>"
         },
         'element': '#cover-main'
     },
@@ -3453,6 +3716,12 @@
         content: '',
         template: 'template_alsa',
     }
+
+    // Paste the Google Apps Script Web App URL here after deploying Code.gs.
+    window.WEDDING_WISH_CONFIG = {
+        endpoint: 'https://script.google.com/macros/s/AKfycbwLtg3_53IBaEQ5ERI17SQbulJZaMKkYMIU7rdD5LDjjIPl4yRmXeRFPVqhCCdj5siZ/exec',
+        pageSize: 10,
+    };
 </script>
 
 
@@ -3490,7 +3759,7 @@
         end: null,
     };
 
-    window.LANGUAGE_TOGGLE = 0;
+    window.LANGUAGE_TOGGLE = 1;
     window.DEFAULT_LANG = "EN";
 
     window.MANAGE_SECTION_ENABLED = true;
@@ -3502,7 +3771,61 @@
 <!-- Partial -->
 <script src="./src/universal.js?1781335337" defer></script>
 <!-- <script src="./src/template/template.js?1781335337"></script> -->
-<script src="/public/dist/4964c82c.js" defer></script>
+<script src="/public/dist/4964c82c.js?v=20260621-2" defer></script>
+<script defer>
+    (function () {
+        function syncMusicButton(isPlaying) {
+            var box = document.getElementById("music-box");
+            if (!box) return;
+            box.classList.toggle("playing", Boolean(isPlaying));
+            box.setAttribute("aria-label", isPlaying ? "Jeda musik" : "Putar musik");
+            box.setAttribute("aria-pressed", isPlaying ? "true" : "false");
+        }
+
+        function patchAudioManager() {
+            if (!window.AudioManager) return false;
+            var manager = window.AudioManager;
+            if (manager.__musicUiPatched) return true;
+
+            var playBoxAnimation = manager.playBoxAnimation.bind(manager);
+            var pauseBoxAnimation = manager.pauseBoxAnimation.bind(manager);
+
+            manager.playBoxAnimation = function () {
+                playBoxAnimation();
+                syncMusicButton(true);
+            };
+
+            manager.pauseBoxAnimation = function () {
+                var box = document.querySelector(manager.config && manager.config.box ? manager.config.box : "#music-box");
+                if (box) {
+                    box.classList.remove("playing");
+                    if (window.jQuery) window.jQuery(box).css("animationPlayState", "");
+                }
+                syncMusicButton(false);
+            };
+
+            manager.__musicUiPatched = true;
+            syncMusicButton(manager.state && manager.state.isMusicPlayed);
+            return true;
+        }
+
+        function bootMusicUiPatch() {
+            if (patchAudioManager()) return;
+            var attempts = 0;
+            var timer = window.setInterval(function () {
+                attempts += 1;
+                if (patchAudioManager() || attempts > 100) window.clearInterval(timer);
+            }, 50);
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", bootMusicUiPatch, { once: true });
+        } else {
+            bootMusicUiPatch();
+        }
+    })();
+</script>
+<script type="module" src="./src/wedding-wish-browser.js"></script>
 
 <script src="/public/dist/03fa5143.js" defer></script>
 </body>

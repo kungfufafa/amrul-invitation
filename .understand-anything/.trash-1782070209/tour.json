@@ -1,0 +1,80 @@
+[
+  {
+    "order": 1,
+    "title": "Wedding Invitation Entry Point",
+    "description": "Start with index.html, the single-page entry point for Hani and Amrul's wedding invitation. This file defines the full guest experience in one document: inline configuration for RSVP, music, and layout options, Alsa template sections (hero, couple, gallery, events), and script or stylesheet tags that wire up every runtime dependency. Understanding its structure gives you a map of the entire site before diving into individual assets.",
+    "nodeIds": ["file:index.html"],
+    "languageLesson": "Static sites often use a single HTML file as both the page structure and the configuration surface — inline JavaScript objects or data attributes hold guest-facing settings without a separate build step."
+  },
+  {
+    "order": 2,
+    "title": "Compiled Theme Bundles",
+    "description": "Building on the script and link tags in index.html, the public/dist folder holds hash-named bundles that power the visual theme and plugin initialization. The CSS bundle (ca7f5103.css) carries Alsa template custom properties, typography rules, and frame backgrounds, while the JavaScript bundle (4964c82c.js) boots AOS scroll animations, lightGallery, Slick carousels, Selectize dropdowns, modal-video, Video.js, tsParticles, form AJAX, and language switching. These pre-built artifacts mean the site runs without a local compile step.",
+    "nodeIds": ["file:public/dist/ca7f5103.css", "file:public/dist/4964c82c.js"]
+  },
+  {
+    "order": 3,
+    "title": "Core Application Logic",
+    "description": "src/universal.js is the hand-written application layer that sits alongside the compiled bundle. It provides shared UI helpers — modal open/close, alert toasts, AJAX postData, clipboard copy, Selectize form widgets, tab toggles, and document-ready event bindings — that the wedding forms and interactive sections rely on. With the highest fan-out in the codebase, this file is the central hub connecting guest-facing behavior to jQuery and the DOM.",
+    "nodeIds": ["file:src/universal.js"],
+    "languageLesson": "jQuery's $(document).ready() pattern defers initialization until the DOM is parsed, letting universal.js safely attach event handlers and enhance form controls before the guest interacts with the page."
+  },
+  {
+    "order": 4,
+    "title": "jQuery Foundation",
+    "description": "The site vendors jQuery 3.5.1 locally in src/jquery.js rather than loading it from a CDN. universal.js depends on jQuery for DOM selection, event binding, and AJAX — the same primitives the compiled bundle uses for plugin initialization. Keeping jQuery local ensures the invitation works offline or on slow networks, which matters for guests opening the link at a venue with poor connectivity.",
+    "nodeIds": ["file:src/jquery.js"]
+  },
+  {
+    "order": 5,
+    "title": "Gallery Plugin Styles",
+    "description": "Three plugin stylesheets in the plugin/ directory shape the photo and carousel experiences referenced from index.html. flexbin.css lays out the masonry-style gallery grid, slick.css styles the carousel track and navigation arrows, and lightgallery.css provides lightbox overlay, loading indicators, and video-provider graphics. Together they define how wedding photos are displayed, scrolled, and enlarged — note that the lightGallery distribution is incomplete (missing dist/fonts and dist/img assets documented in the audit).",
+    "nodeIds": ["file:plugin/flexbin/flexbin.css", "file:plugin/slick/slick.css", "file:plugin/lightgallery/dist/css/lightgallery.css"]
+  },
+  {
+    "order": 6,
+    "title": "Screenshot Export Library",
+    "description": "src/js/html2canvas-1.4.1.1749130377.js is a vendored copy of html2canvas that renders DOM elements onto a canvas, enabling guests to save or share a screenshot of the invitation. This library is loaded separately from the main bundle and supports the share-or-download feature without requiring server-side rendering. The audit notes its source map is missing, which affects debugging but not guest-facing functionality.",
+    "nodeIds": ["file:src/js/html2canvas-1.4.1.1749130377.js"],
+    "languageLesson": "html2canvas walks the DOM tree, computes styles, and paints each element onto an HTML5 canvas — a client-side alternative to server-side headless browser screenshot APIs."
+  },
+  {
+    "order": 7,
+    "title": "Custom Typography",
+    "description": "The invitation's elegant look depends on locally hosted OpenType fonts in media/external/. Bebas Neue Regular provides bold display headings, while the Butler family (Regular, Light, and Bold) supplies the serif body and accent typography defined via @font-face rules in the compiled CSS bundle. Self-hosting fonts avoids CDN latency and keeps the typographic identity consistent even when third-party services are unreachable.",
+    "nodeIds": [
+      "resource:media/external/BebasNeue_Regular.otf",
+      "resource:media/external/Butler_Regular.otf",
+      "resource:media/external/Butler_Light.otf",
+      "resource:media/external/Butler_Bold.otf"
+    ],
+    "languageLesson": "@font-face in CSS declares custom fonts with src pointing to local files; browsers download only the weights actually referenced in stylesheets, so unused font files become cleanup candidates."
+  },
+  {
+    "order": 8,
+    "title": "Wedding Photo Gallery",
+    "description": "The flexbin gallery section in index.html references pairs of WebP images for each wedding photo: a _1.webp thumbnail for the responsive grid and a full-resolution .webp opened in the lightGallery lightbox. These assets live under media/external/ with imgbb-sourced filenames. The thumbnail-plus-full pattern keeps initial page load fast while preserving high-quality enlargement when a guest taps a photo.",
+    "nodeIds": [
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp"
+    ]
+  },
+  {
+    "order": 9,
+    "title": "Couple Section Portraits",
+    "description": "Beyond the event gallery, the couple section displays portrait WebP images of each partner with the same thumbnail-and-lightbox pairing used elsewhere. These responsive portraits are among the most visible assets on the page and are directly referenced from index.html. They illustrate how media/external/ serves both decorative hero content and interactive lightGallery targets throughout the single-page layout.",
+    "nodeIds": [
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp"
+    ]
+  },
+  {
+    "order": 10,
+    "title": "Codebase Audit Documentation",
+    "description": "The docs/codebase-cleanup-audit/ folder documents a systematic review of this static site. Start with 01_TECHNICAL_BASELINE.md for the stack overview, folder map, and features to preserve, then read 08_EXECUTIVE_SUMMARY.md for the verdict on safe cleanup actions. These docs explain known broken assets, unused files, CDN hardening recommendations, and a phased remediation plan — essential context if you plan to modify or deploy the site.",
+    "nodeIds": [
+      "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 3,
+  "edgesRestored": 5,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "No mechanical 'Fixed' section in merge report; 75 nodes merged cleanly with no ID/type/complexity corrections logged.",
+    "Recovered 3 file nodes for audit-document targets that exist on disk but were never analyzed in batches 2-3: public/dist/4964c82c.js, public/dist/ca7f5103.css, plugin/lightgallery/dist/css/lightgallery.css.",
+    "Restored all 5 dropped 'documents' edges from batch-1 linking audit markdown to those files.",
+    "Import map is empty (static HTML with script tags); no cross-batch import edges to add.",
+    "Remaining gap: public/dist/4964c82c.js and other public/dist bundles have no function-level analysis because batch-3 only analyzed src/universal.js and src/jquery.js."
+  ]
+}

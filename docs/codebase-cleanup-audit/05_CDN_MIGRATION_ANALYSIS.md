@@ -1,0 +1,26 @@
+# CDN migration analysis
+
+Current CDN URLs were observed as-is. Recommendations are intentionally conservative: this invitation has user-facing media, forms, a lightbox, sliders, and a static deployment model with no CSP/deployment config in the repository.
+
+| Library | Current Source | Current Version | Usage | CDN Candidate | Exact CDN Version | SRI Available | Local Fallback | CSP Impact | Offline Impact | Recommendation | Reason |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| jQuery | local `src/jquery.js` | 3.5.1 | prerequisite for nearly all interaction | jsDelivr/cdnjs | 3.5.1 | yes | already local | new `script-src` host | major if CDN-only | KEEP_LOCAL | Critical dependency, old version and compatibility-sensitive; no performance case for a migration. |
+| AOS | local plugin | unknown | many `data-aos` animations | jsDelivr only after version proof | pin exact verified version | likely | retain local | `script-src`/`style-src` | visible animation loss | KEEP_LOCAL | Version/provenance unknown; locally copied bundle matches current behavior. |
+| Slick | local plugin | version not embedded | story and gift sliders | cdnjs/jsDelivr after version proof | pin exact | likely | retain local | script/style hosts | slider loss | KEEP_LOCAL | jQuery order and custom options make migration higher risk than benefit. |
+| Selectize | local plugin | 0.13.3 | bank and language selects | cdnjs/jsDelivr | 0.13.3 | likely | retain local | script/style hosts | forms degraded | KEEP_LOCAL | Current local plugin is small and form-critical. |
+| modal-video | local plugin | 2.4.2 | video trigger | jsDelivr | 2.4.2 | verify before use | retain local | script/style hosts | video modal loss | KEEP_LOCAL | Small, jQuery-dependent and ordering-sensitive. |
+| lightGallery | local plugin | 1.4.1-beta.0 | photo/story lightbox | no migration before licensing/version review | n/a | n/a | required | script/style/font/img hosts | gallery degradation | KEEP_LOCAL / REPAIR | Existing distribution is incomplete and declares GPLv3. Restore/replace as a tested unit; do not merely swap a CDN URL. |
+| html2canvas | local `src/js` | 1.4.1 | invitation/export capture | jsDelivr | 1.4.1 | likely | retain local | `script-src` | export failure | KEEP_LOCAL | Used with an explicit remote proxy; local exact copy avoids an extra availability dependency. |
+| Font Awesome | cdnjs | 5.9.0 | `.fas` icons | cdnjs | 5.9.0 | yes | none | `style-src` + `font-src` | icons absent | KEEP_CDN_WITH_HARDENING | Already an exact URL, but add SRI/crossorigin after CSP validation; consider local fallback because icons are functional controls. |
+| Phosphor Icons | unpkg | unpinned package entry | bank/copy controls | jsDelivr package file or local bundle | 2.1.2 (runtime resolved) | verify | local icon fallback | `script-src`, then six `style-src` loads | control icons absent | MIGRATE_TO_PINNED_SOURCE | The bare unpkg URL resolves dynamically and loads six stylesheets; pin exact version and prefer local/package-managed asset for predictability. |
+| Video.js | Zencoder CDN | 8.16.1 | video player | current official host or local bundle | 8.16.1 | verify | local fallback recommended | script/style/font/media hosts | video player failure | KEEP_CDN_WITH_FALLBACK | Exact URL but critical media feature; test plugin compatibility and add fallback/SRI where supported. |
+| videojs-youtube | unpkg | unpinned | YouTube integration | jsDelivr/npm file or local vendored copy | first determine compatible exact version | verify | local fallback required | `script-src` | YouTube playback failure | MIGRATE_TO_PINNED_SOURCE | Unpinned URL is supply-chain and regression risk; version must be tied to Video.js 8.16.1. |
+| tsParticles | jsDelivr | 3.9.1 | optional conditional particle effect | jsDelivr | 3.9.1 | verify | no fallback if feature disabled | `script-src`, remote image hosts when enabled | optional decorative effect loss | KEEP_CURRENT_PENDING_USAGE | It is exact and CDN-stable, but likely unused on this page. Measure configuration before any migration. |
+| Swiper CSS | jsDelivr | `@11` major-only pin | no confirmed usage | n/a | n/a | n/a | n/a | `style-src` | none if unused | REMOVE_AFTER_VALIDATION | Not a migration candidate: no matching JS/markup. |
+| Google Fonts | preload-only Google URLs plus local faces | query not actually stylesheet-loaded | local `@font-face` files | local files | n/a | n/a | already local | current preconnect/preload hosts | none | KEEP_FONTS_LOCAL; REMOVE_STALE_PRELOADS LATER | Local WOFF2 files are the actual source. Existing `as=style` preloads do not apply a stylesheet and add third-party connection cost. |
+
+## Security and CSP conditions
+
+All current third-party script/style tags lack SRI and `crossorigin="anonymous"`; no repository CSP exists. Before any CDN change, obtain the production CSP/header policy, test exact URLs in a staging deployment, preserve script order, verify SRI against the exact response, and add a local fallback for interactive/critical features. Do not use `latest`, bare package URLs, or a major-only version range.
+
+Company/logo images, wedding photography, custom CSS/JS, custom fonts, audio, uploads, and ALSA template graphics should remain local. CDN migration offers little benefit for these mutable or privacy-sensitive assets.

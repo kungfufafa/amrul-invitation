@@ -1,0 +1,275 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "document",
+      "name": "01_TECHNICAL_BASELINE.md",
+      "filePath": "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "summary": "Establishes the static wedding-invitation technical baseline: stack (HTML/jQuery/plugins), asset flow without a build step, folder map, runtime smoke-test results, functional features to preserve, and audit scope limitations.",
+      "tags": ["documentation", "audit", "technical-baseline", "static-site"],
+      "complexity": "moderate",
+      "languageNotes": "Anchors the cleanup audit with observed runtime behavior on desktop and mobile viewports."
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "type": "document",
+      "name": "02_ASSET_INVENTORY.md",
+      "filePath": "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "summary": "Catalogs 191 local assets (33.01 MiB) across media, plugin, public/dist, and src with per-group reference tracing, duplicate status, confidence ratings, and inventory exclusion rules.",
+      "tags": ["documentation", "audit", "asset-inventory", "media"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "type": "document",
+      "name": "03_BROKEN_AND_MISSING_ASSETS.md",
+      "filePath": "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "summary": "Documents confirmed broken and missing assets including Orn-64.png, incomplete lightGallery distribution, missing html2canvas source map, stale commented template script, and root-relative URL deployment risk.",
+      "tags": ["documentation", "audit", "broken-assets", "missing-files"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "type": "document",
+      "name": "04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "filePath": "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "summary": "Lists high-confidence unused asset, duplicate-hash, dead-code, and unused-dependency candidates with evidence, removal risk, and SHA-256 duplicate groups; no deletions performed by the audit.",
+      "tags": ["documentation", "audit", "unused-assets", "duplicates"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "type": "document",
+      "name": "05_CDN_MIGRATION_ANALYSIS.md",
+      "filePath": "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "summary": "Evaluates each CDN and local library dependency with conservative migration recommendations, prioritizing KEEP_LOCAL for critical plugins and pinning/SRI hardening for unpinned third-party URLs.",
+      "tags": ["documentation", "audit", "cdn-analysis", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "type": "document",
+      "name": "06_FINDINGS_REGISTER.md",
+      "filePath": "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "summary": "Consolidated findings register merging asset, dead-code, CDN security, and metadata issues with severity, evidence, user impact, risk, and confidence for each tracked finding ID.",
+      "tags": ["documentation", "audit", "findings-register", "tracking"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "type": "document",
+      "name": "07_REMEDIATION_PLAN.md",
+      "filePath": "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "summary": "Defines seven isolated PR phases from smoke-test baseline through asset repair, dead-file removal, CDN hardening, optional build pipeline, and final validation with explicit scope and rollback rules.",
+      "tags": ["documentation", "audit", "remediation-plan", "deployment"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "type": "document",
+      "name": "08_EXECUTIVE_SUMMARY.md",
+      "filePath": "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "summary": "Executive verdict that bulk deletion and CDN migration are not ready; recommends safety-net PR, two targeted asset repairs, ordered quick wins, and lists unsafe areas requiring extra evidence before change.",
+      "tags": ["documentation", "audit", "executive-summary", "overview"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:public/dist/4964c82c.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:src/universal.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:src/jquery.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "file:public/dist/4964c82c.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "file:public/dist/ca7f5103.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "file:plugin/lightgallery/dist/css/lightgallery.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "file:src/js/html2canvas-1.4.1.1749130377.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "target": "file:plugin/flexbin/flexbin.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "target": "file:src/jquery.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "target": "file:public/dist/4964c82c.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "target": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "target": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "target": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "target": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "target": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

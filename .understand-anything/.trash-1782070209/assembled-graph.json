@@ -1,0 +1,2084 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "amrul-wi",
+    "languages": [
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "otf",
+      "unknown",
+      "webp"
+    ],
+    "frameworks": [],
+    "description": "Static wedding invitation website for Hani & Amrul, built as a single-page HTML site with jQuery, CSS animation plugins, and locally hosted media assets.",
+    "analyzedAt": "2026-06-21T19:29:56.594494Z",
+    "gitCommitHash": "a0abb66575ba14d2c0274f78f5739a987ac4935a"
+  },
+  "nodes": [
+    {
+      "id": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "document",
+      "name": "01_TECHNICAL_BASELINE.md",
+      "filePath": "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "summary": "Establishes the static wedding-invitation technical baseline: stack (HTML/jQuery/plugins), asset flow without a build step, folder map, runtime smoke-test results, functional features to preserve, and audit scope limitations.",
+      "tags": [
+        "documentation",
+        "audit",
+        "technical-baseline",
+        "static-site"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Anchors the cleanup audit with observed runtime behavior on desktop and mobile viewports."
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "type": "document",
+      "name": "02_ASSET_INVENTORY.md",
+      "filePath": "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "summary": "Catalogs 191 local assets (33.01 MiB) across media, plugin, public/dist, and src with per-group reference tracing, duplicate status, confidence ratings, and inventory exclusion rules.",
+      "tags": [
+        "documentation",
+        "audit",
+        "asset-inventory",
+        "media"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "type": "document",
+      "name": "03_BROKEN_AND_MISSING_ASSETS.md",
+      "filePath": "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "summary": "Documents confirmed broken and missing assets including Orn-64.png, incomplete lightGallery distribution, missing html2canvas source map, stale commented template script, and root-relative URL deployment risk.",
+      "tags": [
+        "documentation",
+        "audit",
+        "broken-assets",
+        "missing-files"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "type": "document",
+      "name": "04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "filePath": "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "summary": "Lists high-confidence unused asset, duplicate-hash, dead-code, and unused-dependency candidates with evidence, removal risk, and SHA-256 duplicate groups; no deletions performed by the audit.",
+      "tags": [
+        "documentation",
+        "audit",
+        "unused-assets",
+        "duplicates"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "type": "document",
+      "name": "05_CDN_MIGRATION_ANALYSIS.md",
+      "filePath": "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "summary": "Evaluates each CDN and local library dependency with conservative migration recommendations, prioritizing KEEP_LOCAL for critical plugins and pinning/SRI hardening for unpinned third-party URLs.",
+      "tags": [
+        "documentation",
+        "audit",
+        "cdn-analysis",
+        "security"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "type": "document",
+      "name": "06_FINDINGS_REGISTER.md",
+      "filePath": "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "summary": "Consolidated findings register merging asset, dead-code, CDN security, and metadata issues with severity, evidence, user impact, risk, and confidence for each tracked finding ID.",
+      "tags": [
+        "documentation",
+        "audit",
+        "findings-register",
+        "tracking"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "type": "document",
+      "name": "07_REMEDIATION_PLAN.md",
+      "filePath": "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "summary": "Defines seven isolated PR phases from smoke-test baseline through asset repair, dead-file removal, CDN hardening, optional build pipeline, and final validation with explicit scope and rollback rules.",
+      "tags": [
+        "documentation",
+        "audit",
+        "remediation-plan",
+        "deployment"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "type": "document",
+      "name": "08_EXECUTIVE_SUMMARY.md",
+      "filePath": "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "summary": "Executive verdict that bulk deletion and CDN migration are not ready; recommends safety-net PR, two targeted asset repairs, ordered quick wins, and lists unsafe areas requiring extra evidence before change.",
+      "tags": [
+        "documentation",
+        "audit",
+        "executive-summary",
+        "overview"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.understand-anything/.understandignore",
+      "type": "config",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Understand-Anything exclusion patterns file using gitignore syntax to skip directories and test files from codebase analysis.",
+      "tags": [
+        "configuration",
+        "analysis-tool",
+        "ignore-patterns",
+        "understand-anything"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "Understand-Anything plugin settings disabling auto-update and setting English as the documentation output language.",
+      "tags": [
+        "configuration",
+        "analysis-tool",
+        "understand-anything",
+        "localization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Single-page wedding invitation entry point for Hani and Amrul featuring inline config (RSVP, music, layouts), Alsa template sections, CDN plugins, and embedded media references.",
+      "tags": [
+        "entry-point",
+        "markup",
+        "wedding-invitation",
+        "single-page",
+        "component"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Monolithic HTML with inline @font-face blocks, window globals for RSVP/music/layout, and deferred jQuery plugin loading."
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "summary": "Responsive WebP thumbnail variant of a gallery photo used in the lightgallery photo section.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "summary": "Full-size WebP gallery image linked as the lightbox target for gallery photo entry.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "summary": "Responsive WebP thumbnail for a wedding gallery photo displayed in the flexbin grid.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "summary": "Full-resolution WebP gallery image opened in the lightgallery lightbox viewer.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "summary": "Responsive WebP thumbnail for a wedding gallery photo in the photo gallery section.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "summary": "Full-size WebP gallery image used as the lightgallery href target.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "summary": "Responsive WebP thumbnail variant for a gallery grid cell in index.html.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "summary": "Full-resolution WebP wedding gallery photo for lightbox viewing.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "summary": "Responsive WebP thumbnail for a gallery photo in the invitation site.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "summary": "Full-size WebP gallery image referenced by lightgallery href in index.html.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "summary": "Responsive WebP thumbnail for a wedding photo gallery entry.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "summary": "Full-resolution WebP gallery photo opened in the lightbox viewer.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "summary": "Responsive WebP thumbnail for the final gallery photo in the grid.",
+      "tags": [
+        "webp",
+        "gallery",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "type": "resource",
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "summary": "Full-size WebP gallery image for lightgallery in the photo section.",
+      "tags": [
+        "webp",
+        "gallery",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "type": "resource",
+      "name": "dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "filePath": "media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "summary": "Orphaned WebP thumbnail asset (800\u00d7800) with no references in HTML, CSS, or JS; candidate for removal.",
+      "tags": [
+        "webp",
+        "unused-asset",
+        "thumbnail",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "type": "resource",
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "summary": "Responsive WebP portrait of one partner displayed in the couple section with lightgallery.",
+      "tags": [
+        "webp",
+        "couple-photo",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "type": "resource",
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "summary": "Full-size WebP couple portrait used as the lightgallery href in the couple section.",
+      "tags": [
+        "webp",
+        "couple-photo",
+        "lightbox",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "type": "resource",
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "summary": "Responsive WebP portrait of the second partner in the couple section.",
+      "tags": [
+        "webp",
+        "couple-photo",
+        "responsive",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/BebasNeue_Regular.otf",
+      "type": "resource",
+      "name": "BebasNeue_Regular.otf",
+      "filePath": "media/external/BebasNeue_Regular.otf",
+      "summary": "Bebas Neue regular OpenType font loaded via @font-face in compiled CSS for display headings.",
+      "tags": [
+        "otf",
+        "font",
+        "typography",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/Butler_Bold.otf",
+      "type": "resource",
+      "name": "Butler_Bold.otf",
+      "filePath": "media/external/Butler_Bold.otf",
+      "summary": "Butler Bold OpenType font used for emphasis typography in the Alsa wedding template styles.",
+      "tags": [
+        "otf",
+        "font",
+        "typography",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/Butler_Light.otf",
+      "type": "resource",
+      "name": "Butler_Light.otf",
+      "filePath": "media/external/Butler_Light.otf",
+      "summary": "Butler Light OpenType font providing light-weight serif typography in template CSS.",
+      "tags": [
+        "otf",
+        "font",
+        "typography",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "resource:media/external/Butler_Regular.otf",
+      "type": "resource",
+      "name": "Butler_Regular.otf",
+      "filePath": "media/external/Butler_Regular.otf",
+      "summary": "Butler Regular OpenType font used as the primary serif body and heading typeface.",
+      "tags": [
+        "otf",
+        "font",
+        "typography",
+        "media-asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "summary": "External WebP thumbnail (1200\u00d71200) hosted via imgbb, used as a gallery or hero image asset.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external 2000\u00d72000 gallery image from imgbb CDN.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "summary": "External WebP gallery image (2000\u00d72000) sourced from imgbb for wedding photo display.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external wedding gallery photo from imgbb.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "summary": "External WebP gallery image (2000\u00d72000) for wedding invitation photo carousel or grid.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external wedding photo hosted on imgbb.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "summary": "External WebP gallery image (2000\u00d72000) used in the wedding site photo section.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:plugin/flexbin/flexbin.css",
+      "type": "file",
+      "name": "flexbin.css",
+      "filePath": "plugin/flexbin/flexbin.css",
+      "summary": "Flexbin masonry gallery stylesheet defining flex-wrap image grid layout with responsive breakpoints.",
+      "tags": [
+        "stylesheet",
+        "gallery",
+        "layout",
+        "plugin"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:plugin/slick/slick.css",
+      "type": "file",
+      "name": "slick.css",
+      "filePath": "plugin/slick/slick.css",
+      "summary": "Slick carousel plugin base styles for slider track, list, arrows, and touch-friendly scrolling.",
+      "tags": [
+        "stylesheet",
+        "carousel",
+        "slider",
+        "plugin"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/jquery.js",
+      "type": "file",
+      "name": "jquery.js",
+      "filePath": "src/jquery.js",
+      "summary": "Vendored jQuery v3.5.1 library providing DOM manipulation, events, and AJAX utilities for the site.",
+      "tags": [
+        "vendor",
+        "jquery",
+        "dom",
+        "library"
+      ],
+      "complexity": "complex",
+      "languageNotes": "UMD-wrapped IIFE bundle; tree-sitter extraction yields no top-level named functions."
+    },
+    {
+      "id": "file:src/js/html2canvas-1.4.1.1749130377.js",
+      "type": "file",
+      "name": "html2canvas-1.4.1.1749130377.js",
+      "filePath": "src/js/html2canvas-1.4.1.1749130377.js",
+      "summary": "Vendored html2canvas 1.4.1 library that renders DOM elements to canvas for invitation screenshot export.",
+      "tags": [
+        "vendor",
+        "screenshot",
+        "canvas",
+        "library"
+      ],
+      "complexity": "complex",
+      "languageNotes": "UMD factory bundle exposing global html2canvas; no extractable top-level function nodes."
+    },
+    {
+      "id": "file:src/universal.js",
+      "type": "file",
+      "name": "universal.js",
+      "filePath": "src/universal.js",
+      "summary": "Core application JavaScript with shared UI helpers, AJAX posting, form widgets, and document-ready event bindings for the wedding site.",
+      "tags": [
+        "entry-point",
+        "utility",
+        "event-handler",
+        "ajax"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/universal.js:openModal",
+      "type": "function",
+      "name": "openModal",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        6,
+        22
+      ],
+      "summary": "Opens a modal overlay, optionally clearing any existing modal first and appending new content.",
+      "tags": [
+        "ui",
+        "modal",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:closeModal",
+      "type": "function",
+      "name": "closeModal",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        25,
+        34
+      ],
+      "summary": "Hides the primary modal, restores body scroll, and clears modal HTML content.",
+      "tags": [
+        "ui",
+        "modal",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:showAlert",
+      "type": "function",
+      "name": "showAlert",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        55,
+        64
+      ],
+      "summary": "Displays a styled alert message with optional auto-dismiss after a delay.",
+      "tags": [
+        "ui",
+        "alert",
+        "notification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:postData",
+      "type": "function",
+      "name": "postData",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        82,
+        169
+      ],
+      "summary": "Sends FormData via jQuery AJAX with loader, success/error callbacks, and upload progress hooks.",
+      "tags": [
+        "api-handler",
+        "ajax",
+        "network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:copyToClipboard",
+      "type": "function",
+      "name": "copyToClipboard",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        186,
+        211
+      ],
+      "summary": "Copies text to the clipboard using the legacy execCommand API with fallback handling.",
+      "tags": [
+        "utility",
+        "clipboard",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:getOffset",
+      "type": "function",
+      "name": "getOffset",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        221,
+        239
+      ],
+      "summary": "Calculates cumulative offset coordinates of a DOM element relative to the document.",
+      "tags": [
+        "utility",
+        "dom",
+        "positioning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:generate_tooltip",
+      "type": "function",
+      "name": "generate_tooltip",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        242,
+        345
+      ],
+      "summary": "Builds and positions a custom tooltip on hover with viewport-aware placement logic.",
+      "tags": [
+        "ui",
+        "tooltip",
+        "dom"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:generate_chart_data",
+      "type": "function",
+      "name": "generate_chart_data",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        353,
+        365
+      ],
+      "summary": "Transforms raw chart input data into formatted series values for visualization.",
+      "tags": [
+        "utility",
+        "chart",
+        "data"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:init_selectize",
+      "type": "function",
+      "name": "init_selectize",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        379,
+        397
+      ],
+      "summary": "Initializes Selectize dropdown widgets on matching elements with shared options.",
+      "tags": [
+        "ui",
+        "form",
+        "selectize"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:selectize_options",
+      "type": "function",
+      "name": "selectize_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        405,
+        417
+      ],
+      "summary": "Returns default Selectize configuration options for searchable dropdowns.",
+      "tags": [
+        "configuration",
+        "selectize",
+        "form"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:whatsapp_template_selection_options",
+      "type": "function",
+      "name": "whatsapp_template_selection_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        420,
+        457
+      ],
+      "summary": "Builds Selectize option list for WhatsApp message template selection.",
+      "tags": [
+        "form",
+        "whatsapp",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:whatsapp_template_selection",
+      "type": "function",
+      "name": "whatsapp_template_selection",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        460,
+        474
+      ],
+      "summary": "Handles WhatsApp template dropdown change events and updates related form state.",
+      "tags": [
+        "form",
+        "whatsapp",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection_options",
+      "type": "function",
+      "name": "guest_group_selection_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        477,
+        515
+      ],
+      "summary": "Builds Selectize option list for guest group filtering and selection.",
+      "tags": [
+        "form",
+        "rsvp",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection",
+      "type": "function",
+      "name": "guest_group_selection",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        518,
+        539
+      ],
+      "summary": "Responds to guest group dropdown changes and triggers dependent UI updates.",
+      "tags": [
+        "form",
+        "rsvp",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection_options",
+      "type": "function",
+      "name": "main_event_selection_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        542,
+        580
+      ],
+      "summary": "Builds Selectize option list for main wedding event selection.",
+      "tags": [
+        "form",
+        "event",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection",
+      "type": "function",
+      "name": "main_event_selection",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        583,
+        618
+      ],
+      "summary": "Handles main event dropdown changes and coordinates related form fields.",
+      "tags": [
+        "form",
+        "event",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:populateSelectOptions",
+      "type": "function",
+      "name": "populateSelectOptions",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        621,
+        652
+      ],
+      "summary": "Populates a select element with options from a data array and refreshes Selectize.",
+      "tags": [
+        "utility",
+        "form",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:counter",
+      "type": "function",
+      "name": "counter",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        655,
+        686
+      ],
+      "summary": "Animates numeric counters with progress bar width updates and formatted display.",
+      "tags": [
+        "ui",
+        "animation",
+        "counter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:thousands",
+      "type": "function",
+      "name": "thousands",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        689,
+        698
+      ],
+      "summary": "Formats numbers with thousands separators for display in counters and stats.",
+      "tags": [
+        "utility",
+        "formatting",
+        "number"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:textarea_height",
+      "type": "function",
+      "name": "textarea_height",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        701,
+        716
+      ],
+      "summary": "Auto-resizes textarea height to fit content on keyup and focus events.",
+      "tags": [
+        "ui",
+        "form",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:goto_calculator",
+      "type": "function",
+      "name": "goto_calculator",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        731,
+        752
+      ],
+      "summary": "Navigates to a calculator page with query parameters derived from link attributes.",
+      "tags": [
+        "navigation",
+        "utility",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:init_tab",
+      "type": "function",
+      "name": "init_tab",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        769,
+        781
+      ],
+      "summary": "Activates the default tab on page load by triggering click on marked tab nav items.",
+      "tags": [
+        "ui",
+        "tabs",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:tab_content_toggle",
+      "type": "function",
+      "name": "tab_content_toggle",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        784,
+        800
+      ],
+      "summary": "Switches active tab state and shows/hides associated tab content panels.",
+      "tags": [
+        "ui",
+        "tabs",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:animateCSS",
+      "type": "function",
+      "name": "animateCSS",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        803,
+        835
+      ],
+      "summary": "Applies Animate.css classes to an element and removes them after animation ends.",
+      "tags": [
+        "ui",
+        "animation",
+        "css"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:getViewport",
+      "type": "function",
+      "name": "getViewport",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        838,
+        847
+      ],
+      "summary": "Returns current viewport width and height from window dimensions.",
+      "tags": [
+        "utility",
+        "viewport",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:getMobileOperatingSystem",
+      "type": "function",
+      "name": "getMobileOperatingSystem",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        855,
+        873
+      ],
+      "summary": "Detects mobile OS (iOS, Android, Windows Phone) from user agent string.",
+      "tags": [
+        "utility",
+        "mobile",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:downloadFile",
+      "type": "function",
+      "name": "downloadFile",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        882,
+        902
+      ],
+      "summary": "Triggers a file download by creating a temporary anchor element with blob URL.",
+      "tags": [
+        "utility",
+        "download",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:checkNetwork",
+      "type": "function",
+      "name": "checkNetwork",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        905,
+        952
+      ],
+      "summary": "Monitors online/offline status and shows alerts when network connectivity changes.",
+      "tags": [
+        "network",
+        "event-handler",
+        "notification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:universalSearch",
+      "type": "function",
+      "name": "universalSearch",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        955,
+        967
+      ],
+      "summary": "Filters DOM elements by matching search query text against element content.",
+      "tags": [
+        "utility",
+        "search",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:accordion_toogle",
+      "type": "function",
+      "name": "accordion_toogle",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        1028,
+        1060
+      ],
+      "summary": "Toggles accordion panel expand/collapse with slide animations within a wrapper.",
+      "tags": [
+        "ui",
+        "accordion",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/dist/4964c82c.js",
+      "type": "file",
+      "name": "4964c82c.js",
+      "filePath": "public/dist/4964c82c.js",
+      "summary": "Hash-named application JavaScript bundle referenced from index.html; initializes AOS, lightGallery, Slick, Selectize, modal-video, Video.js, tsParticles, forms/AJAX, and language selection.",
+      "tags": [
+        "javascript",
+        "bundle",
+        "entry-point",
+        "plugin-init"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Compiled/minified output with no build provenance in-repo."
+    },
+    {
+      "id": "file:public/dist/ca7f5103.css",
+      "type": "file",
+      "name": "ca7f5103.css",
+      "filePath": "public/dist/ca7f5103.css",
+      "summary": "Hash-named theme CSS bundle linked from index.html; includes ALSA template frame/background custom properties and typography references.",
+      "tags": [
+        "stylesheet",
+        "bundle",
+        "theme"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:plugin/lightgallery/dist/css/lightgallery.css",
+      "type": "file",
+      "name": "lightgallery.css",
+      "filePath": "plugin/lightgallery/dist/css/lightgallery.css",
+      "summary": "lightGallery v1.4.1-beta.0 stylesheet declaring fonts, loading indicator, and video-provider graphics via relative URLs; distribution missing dist/fonts and dist/img assets.",
+      "tags": [
+        "stylesheet",
+        "lightbox",
+        "plugin"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Referenced CSS exists but companion font/image assets are missing from the checked-in distribution."
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:src/universal.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:src/jquery.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "file:src/js/html2canvas-1.4.1.1749130377.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "target": "file:plugin/flexbin/flexbin.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "target": "file:src/jquery.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "target": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "target": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "target": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "target": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "target": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "target": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.understand-anything/config.json",
+      "target": "config:.understand-anything/.understandignore",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:.understand-anything/config.json",
+      "target": "file:index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.understand-anything/.understandignore",
+      "target": "file:index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/BebasNeue_Regular.otf",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/Butler_Bold.otf",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/Butler_Light.otf",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "resource:media/external/Butler_Regular.otf",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:openModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:closeModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:showAlert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:postData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:copyToClipboard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:getOffset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:generate_tooltip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:generate_chart_data",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:whatsapp_template_selection_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:whatsapp_template_selection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:guest_group_selection_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:guest_group_selection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:main_event_selection_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:main_event_selection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:populateSelectOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:thousands",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:textarea_height",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:goto_calculator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:init_tab",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:tab_content_toggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:animateCSS",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:getViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:getMobileOperatingSystem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:downloadFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:checkNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:universalSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:accordion_toogle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "file:src/jquery.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:src/universal.js:openModal",
+      "target": "function:src/universal.js:closeModal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:postData",
+      "target": "function:src/universal.js:showAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:copyToClipboard",
+      "target": "function:src/universal.js:showAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:whatsapp_template_selection_options",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:whatsapp_template_selection",
+      "target": "function:src/universal.js:whatsapp_template_selection_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:whatsapp_template_selection",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:guest_group_selection_options",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:guest_group_selection",
+      "target": "function:src/universal.js:guest_group_selection_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:guest_group_selection",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection_options",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection",
+      "target": "function:src/universal.js:main_event_selection_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection",
+      "target": "function:src/universal.js:populateSelectOptions",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "target": "file:public/dist/4964c82c.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "file:public/dist/4964c82c.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "target": "file:public/dist/ca7f5103.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "target": "file:plugin/lightgallery/dist/css/lightgallery.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "target": "file:public/dist/4964c82c.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:entry",
+      "name": "Entry & Markup",
+      "description": "Single-page HTML shell for the Hani & Amrul wedding invitation, wiring script tags, stylesheet links, inline RSVP config, and all section markup.",
+      "nodeIds": [
+        "file:index.html"
+      ]
+    },
+    {
+      "id": "layer:application",
+      "name": "Application Logic",
+      "description": "Site-specific JavaScript that drives RSVP forms, AJAX posting, UI helpers, plugin initialization, and language selection for the wedding invitation.",
+      "nodeIds": [
+        "file:src/universal.js",
+        "file:public/dist/4964c82c.js"
+      ]
+    },
+    {
+      "id": "layer:vendor",
+      "name": "Vendor Libraries",
+      "description": "Third-party JavaScript libraries vendored locally\u2014jQuery for DOM/events and html2canvas for invitation screenshot export.",
+      "nodeIds": [
+        "file:src/jquery.js",
+        "file:src/js/html2canvas-1.4.1.1749130377.js"
+      ]
+    },
+    {
+      "id": "layer:styles",
+      "name": "Styles & Plugins",
+      "description": "Compiled theme CSS bundle plus plugin stylesheets for flexbin gallery grid, Slick carousel, and lightGallery lightbox presentation.",
+      "nodeIds": [
+        "file:public/dist/ca7f5103.css",
+        "file:plugin/flexbin/flexbin.css",
+        "file:plugin/slick/slick.css",
+        "file:plugin/lightgallery/dist/css/lightgallery.css"
+      ]
+    },
+    {
+      "id": "layer:assets",
+      "name": "Media Assets",
+      "description": "Locally hosted wedding photos, gallery WebP variants, and Butler/Bebas Neue font files referenced by index.html and compiled CSS.",
+      "nodeIds": [
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+        "resource:media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+        "resource:media/external/BebasNeue_Regular.otf",
+        "resource:media/external/Butler_Bold.otf",
+        "resource:media/external/Butler_Light.otf",
+        "resource:media/external/Butler_Regular.otf",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+        "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp"
+      ]
+    },
+    {
+      "id": "layer:documentation",
+      "name": "Documentation",
+      "description": "Eight-part codebase cleanup audit documenting asset inventory, broken references, CDN migration analysis, findings register, and remediation plan.",
+      "nodeIds": [
+        "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+        "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+        "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+        "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+        "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+        "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+        "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+        "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md"
+      ]
+    },
+    {
+      "id": "layer:config",
+      "name": "Tooling & Config",
+      "description": "Understand-Anything plugin configuration and ignore patterns used for codebase analysis tooling, not runtime site behavior.",
+      "nodeIds": [
+        "config:.understand-anything/.understandignore",
+        "config:.understand-anything/config.json"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Wedding Invitation Entry Point",
+      "description": "Start with index.html, the single-page entry point for Hani and Amrul's wedding invitation. This file defines the full guest experience in one document: inline configuration for RSVP, music, and layout options, Alsa template sections (hero, couple, gallery, events), and script or stylesheet tags that wire up every runtime dependency. Understanding its structure gives you a map of the entire site before diving into individual assets.",
+      "nodeIds": [
+        "file:index.html"
+      ],
+      "languageLesson": "Static sites often use a single HTML file as both the page structure and the configuration surface \u2014 inline JavaScript objects or data attributes hold guest-facing settings without a separate build step."
+    },
+    {
+      "order": 2,
+      "title": "Compiled Theme Bundles",
+      "description": "Building on the script and link tags in index.html, the public/dist folder holds hash-named bundles that power the visual theme and plugin initialization. The CSS bundle (ca7f5103.css) carries Alsa template custom properties, typography rules, and frame backgrounds, while the JavaScript bundle (4964c82c.js) boots AOS scroll animations, lightGallery, Slick carousels, Selectize dropdowns, modal-video, Video.js, tsParticles, form AJAX, and language switching. These pre-built artifacts mean the site runs without a local compile step.",
+      "nodeIds": [
+        "file:public/dist/ca7f5103.css",
+        "file:public/dist/4964c82c.js"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Core Application Logic",
+      "description": "src/universal.js is the hand-written application layer that sits alongside the compiled bundle. It provides shared UI helpers \u2014 modal open/close, alert toasts, AJAX postData, clipboard copy, Selectize form widgets, tab toggles, and document-ready event bindings \u2014 that the wedding forms and interactive sections rely on. With the highest fan-out in the codebase, this file is the central hub connecting guest-facing behavior to jQuery and the DOM.",
+      "nodeIds": [
+        "file:src/universal.js"
+      ],
+      "languageLesson": "jQuery's $(document).ready() pattern defers initialization until the DOM is parsed, letting universal.js safely attach event handlers and enhance form controls before the guest interacts with the page."
+    },
+    {
+      "order": 4,
+      "title": "jQuery Foundation",
+      "description": "The site vendors jQuery 3.5.1 locally in src/jquery.js rather than loading it from a CDN. universal.js depends on jQuery for DOM selection, event binding, and AJAX \u2014 the same primitives the compiled bundle uses for plugin initialization. Keeping jQuery local ensures the invitation works offline or on slow networks, which matters for guests opening the link at a venue with poor connectivity.",
+      "nodeIds": [
+        "file:src/jquery.js"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Gallery Plugin Styles",
+      "description": "Three plugin stylesheets in the plugin/ directory shape the photo and carousel experiences referenced from index.html. flexbin.css lays out the masonry-style gallery grid, slick.css styles the carousel track and navigation arrows, and lightgallery.css provides lightbox overlay, loading indicators, and video-provider graphics. Together they define how wedding photos are displayed, scrolled, and enlarged \u2014 note that the lightGallery distribution is incomplete (missing dist/fonts and dist/img assets documented in the audit).",
+      "nodeIds": [
+        "file:plugin/flexbin/flexbin.css",
+        "file:plugin/slick/slick.css",
+        "file:plugin/lightgallery/dist/css/lightgallery.css"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Screenshot Export Library",
+      "description": "src/js/html2canvas-1.4.1.1749130377.js is a vendored copy of html2canvas that renders DOM elements onto a canvas, enabling guests to save or share a screenshot of the invitation. This library is loaded separately from the main bundle and supports the share-or-download feature without requiring server-side rendering. The audit notes its source map is missing, which affects debugging but not guest-facing functionality.",
+      "nodeIds": [
+        "file:src/js/html2canvas-1.4.1.1749130377.js"
+      ],
+      "languageLesson": "html2canvas walks the DOM tree, computes styles, and paints each element onto an HTML5 canvas \u2014 a client-side alternative to server-side headless browser screenshot APIs."
+    },
+    {
+      "order": 7,
+      "title": "Custom Typography",
+      "description": "The invitation's elegant look depends on locally hosted OpenType fonts in media/external/. Bebas Neue Regular provides bold display headings, while the Butler family (Regular, Light, and Bold) supplies the serif body and accent typography defined via @font-face rules in the compiled CSS bundle. Self-hosting fonts avoids CDN latency and keeps the typographic identity consistent even when third-party services are unreachable.",
+      "nodeIds": [
+        "resource:media/external/BebasNeue_Regular.otf",
+        "resource:media/external/Butler_Regular.otf",
+        "resource:media/external/Butler_Light.otf",
+        "resource:media/external/Butler_Bold.otf"
+      ],
+      "languageLesson": "@font-face in CSS declares custom fonts with src pointing to local files; browsers download only the weights actually referenced in stylesheets, so unused font files become cleanup candidates."
+    },
+    {
+      "order": 8,
+      "title": "Wedding Photo Gallery",
+      "description": "The flexbin gallery section in index.html references pairs of WebP images for each wedding photo: a _1.webp thumbnail for the responsive grid and a full-resolution .webp opened in the lightGallery lightbox. These assets live under media/external/ with imgbb-sourced filenames. The thumbnail-plus-full pattern keeps initial page load fast while preserving high-quality enlargement when a guest taps a photo.",
+      "nodeIds": [
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Couple Section Portraits",
+      "description": "Beyond the event gallery, the couple section displays portrait WebP images of each partner with the same thumbnail-and-lightbox pairing used elsewhere. These responsive portraits are among the most visible assets on the page and are directly referenced from index.html. They illustrate how media/external/ serves both decorative hero content and interactive lightGallery targets throughout the single-page layout.",
+      "nodeIds": [
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Codebase Audit Documentation",
+      "description": "The docs/codebase-cleanup-audit/ folder documents a systematic review of this static site. Start with 01_TECHNICAL_BASELINE.md for the stack overview, folder map, and features to preserve, then read 08_EXECUTIVE_SUMMARY.md for the verdict on safe cleanup actions. These docs explain known broken assets, unused files, CDN hardening recommendations, and a phased remediation plan \u2014 essential context if you plan to modify or deploy the site.",
+      "nodeIds": [
+        "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+        "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md"
+      ]
+    }
+  ]
+}

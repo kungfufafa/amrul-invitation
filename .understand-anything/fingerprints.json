@@ -1,0 +1,795 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "a0abb66575ba14d2c0274f78f5739a987ac4935a",
+  "generatedAt": "2026-06-21T19:30:06.874Z",
+  "files": {
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "50a8bffd64a0bf35b54e1e0daf0701e495a31b9ba8cc7cef867f3e92799bbe22",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": false
+    },
+    ".understand-anything/config.json": {
+      "filePath": ".understand-anything/config.json",
+      "contentHash": "b233e602dc8796ecfd7b8324d091db41c61df3e1b02c30046c0b959e04fcafc1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md": {
+      "filePath": "docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "contentHash": "c6db14c3ed44a480d31cc7e219799e9175802282442055765072dc37b33468a4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 63,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md": {
+      "filePath": "docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "contentHash": "ea8ece2a2ad477e26bd7ea92fbc25722b3b6c1a57f35009d2e6f5323b927f17d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md": {
+      "filePath": "docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "contentHash": "bbf0803cdd9bf6d73d5a06f6a917e97db26a4ad7a2521fdf588c0392dddd4479",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md": {
+      "filePath": "docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "contentHash": "cc69098b11d2da8fb27561e43ab257fb0e8ad781d9e5da5334c8e099d467223b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 31,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md": {
+      "filePath": "docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "contentHash": "2f34e6dec8f03fd6b6fe6cc07ef573b77e52c20fa9b4beb81f59f0600932197b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md": {
+      "filePath": "docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "contentHash": "b3b8402e58731a5d5647295cf0d0c4248e7f63fc1a931c7f0cbdf83e7944540f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md": {
+      "filePath": "docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "contentHash": "a1974ca0503f9579a70c23b4d6e5a4d08ab0abf1907e835804821bba69013f73",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md": {
+      "filePath": "docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "contentHash": "5d4443a19d65c249a12f1362ba0748fa6c0d4b7c47739ee2a84f7baab46f8bb6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "index.html": {
+      "filePath": "index.html",
+      "contentHash": "9a2a372aa84ff2ff624826a3f1a12b30b7e94e4126a05983cd6d96db7341dc6e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3672,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "contentHash": "2d9aceff1580d03940f12bf5b902f7f7edcfcfa262fc5dc01fe44816d1546a22",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1063,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "contentHash": "4ee54be739155e0767c373663479d41f0eae2468be875daeda2d876dab1b8fef",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2602,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "contentHash": "8367e3f8235695e33da4ec5654cabb969ada6bc32707e4c6be21288d9a91baab",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1039,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "contentHash": "0ed2b065f97ea4dd9daf30d8c8bbae4b08a3c83b50d7a04fec6da17f38afb71f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2660,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "contentHash": "ace9f0a66cfdea8b4c88e26b73dbbef35af755250e5948317a2272b9ac969460",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1100,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "contentHash": "4045f4301c4071a5ad0ca87eb1753d0f70d09fd7df84cb2d77e2da24cec04da1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2643,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "contentHash": "93ce3b91efc7ddb4adcab2867e74cdae992ee4316b1884350f7027c78da25635",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1080,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "contentHash": "9e8d63534cd219d6aae8c992014647d4f9c58c6f1b61acb11fe81c8a10db32dc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2631,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "contentHash": "89cf6f968c15f424d1a6fce444966ec852802f0ff78c1149be34708185f3769a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1198,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "contentHash": "18fea6ba76a670dc48ec6ae754055bbf02aa29013f009dd1662d910ea814b363",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2964,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "contentHash": "52495a249ff3d2d684b9781b5d0094f90d815a431bcde7d7dc755e1e8835f139",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1322,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "contentHash": "c4ee78c3f7fe0985a495c0bb718899c73f7ae56a814ee41c2ae993ee3a0220df",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3209,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "contentHash": "96e185d54a4aa2ac2e300192cefe10c2476bc9ad5b38d5c7191d9fab9f6849d6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1104,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp": {
+      "filePath": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "contentHash": "1ff6eaa4c4b5e0f20cc43adb8acab4429eed99f6a74dea2edd098e89540ba236",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2438,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/BebasNeue_Regular.otf": {
+      "filePath": "media/external/BebasNeue_Regular.otf",
+      "contentHash": "9e837ff0753198dec113e8ff6c28d70dcec6e08e881ab4db88787a841fbe7c51",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1152,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/Butler_Bold.otf": {
+      "filePath": "media/external/Butler_Bold.otf",
+      "contentHash": "9ec3ee7376d5da5b1271a0c56455b6d91028798e31a643f5b5563f43fc9c7012",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 714,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/Butler_Light.otf": {
+      "filePath": "media/external/Butler_Light.otf",
+      "contentHash": "1430edc4ae6c781e21a37ad027fa5458b17f2b1d4c98c733731624f06f5e5378",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 685,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/Butler_Regular.otf": {
+      "filePath": "media/external/Butler_Regular.otf",
+      "contentHash": "66586113cb06b2a69088af63f7d00f5247f6dc2a7ea8c0685bf1667d6613860f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 704,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp": {
+      "filePath": "media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "contentHash": "95ffd4dcfa036cc94a932c97a271b941b82340d6eb79616ee3083713517e3aa6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 682,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "contentHash": "a9a4b262244432d16ee591bbe736b6744a83f86a9706ea914e4e9bb76026c20f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 473,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "contentHash": "92edbc9af919388aa9f0b85b16c92036fc8412db0dd6e0e45e1edcea6d2dec84",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 989,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "contentHash": "de794cc56d2694c277f96b29ff3c351103377fca0d1ec7d547c1468f373d69f2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 889,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "contentHash": "8ee82d299afd7ac429138b5a3e0c0490dbfb15f509262db1570419299893e042",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1797,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "contentHash": "d312ac2052db4c71c4899a2e6327218229a0ef10c733ef510532379a573b6ce3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 924,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "contentHash": "8bf1f8518158327127d1d120e687204442d08fd88112594ad2b777a9f9859a88",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1838,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "contentHash": "a32e0e028272d8cfe23dd2a6a927927f6aaa134927dc8051c6a59f3d98c7cedb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1123,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "contentHash": "5c657a35de0d803434b2c9129969c4963aef82b05b2743d04c6b8b53a43bdfa4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2324,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "contentHash": "5229d20f02fdb7394b4d2ccff9528869a8a3cd3c92539ab3cf771467a3c75d81",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1050,
+      "hasStructuralAnalysis": false
+    },
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp": {
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "contentHash": "b3cbe5ac9b217a8a89444d04b03b066875f16bd71aa96cff1fc83105fcd70038",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2003,
+      "hasStructuralAnalysis": false
+    },
+    "plugin/flexbin/flexbin.css": {
+      "filePath": "plugin/flexbin/flexbin.css",
+      "contentHash": "eaea084ab1f088f20f2fd87685a90da518a17b58df4a9f94cd2f611fe34916fa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 92,
+      "hasStructuralAnalysis": false
+    },
+    "plugin/slick/slick.css": {
+      "filePath": "plugin/slick/slick.css",
+      "contentHash": "dae879719d7fbc72049ac6c1ac55264319cc8337152fcf59862bd0a159b97fbf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 110,
+      "hasStructuralAnalysis": false
+    },
+    "src/jquery.js": {
+      "filePath": "src/jquery.js",
+      "contentHash": "2bb31ef0df1cf75b99497c6ebf638c432fb7ea6dcaddffea17d0d3dc8948b05b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5575,
+      "hasStructuralAnalysis": true
+    },
+    "src/js/html2canvas-1.4.1.1749130377.js": {
+      "filePath": "src/js/html2canvas-1.4.1.1749130377.js",
+      "contentHash": "a049e591779ebc4222579f5cd622945b696327ecf20847e49c9f60bf734e133c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10616,
+      "hasStructuralAnalysis": true
+    },
+    "src/universal.js": {
+      "filePath": "src/universal.js",
+      "contentHash": "d4aa60b4c4a9ae919f78cd6ec12a11039f155e30948729c43f449c62aaeb94ec",
+      "functions": [
+        {
+          "name": "openModal",
+          "params": [
+            "modalContent",
+            "modal"
+          ],
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "closeModal",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "closeStackedModal",
+          "params": [],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "hideAlert",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "showAlert",
+          "params": [
+            "message",
+            "status"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "showLoader",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "hideLoader",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "postData",
+          "params": [
+            "data",
+            "props"
+          ],
+          "exported": false,
+          "lineCount": 88
+        },
+        {
+          "name": "wa_chat_toggle",
+          "params": [],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "wa_chat_trigger",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "copyToClipboard",
+          "params": [
+            "text"
+          ],
+          "exported": false,
+          "lineCount": 26
+        },
+        {
+          "name": "copy_text",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "getOffset",
+          "params": [
+            "elem"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "generate_tooltip",
+          "params": [],
+          "exported": false,
+          "lineCount": 104
+        },
+        {
+          "name": "generate_chart",
+          "params": [
+            "canvas",
+            "type",
+            "data",
+            "options"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "generate_chart_data",
+          "params": [
+            "data",
+            "colors",
+            "labels"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "init_selectize",
+          "params": [
+            "el",
+            "opt"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "selected_selectize",
+          "params": [
+            "selectize"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "selectize_options",
+          "params": [
+            "opt"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "whatsapp_template_selection_options",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 38
+        },
+        {
+          "name": "whatsapp_template_selection",
+          "params": [
+            "el"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "guest_group_selection_options",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 39
+        },
+        {
+          "name": "guest_group_selection",
+          "params": [
+            "el"
+          ],
+          "exported": false,
+          "lineCount": 22
+        },
+        {
+          "name": "main_event_selection_options",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 39
+        },
+        {
+          "name": "main_event_selection",
+          "params": [
+            "el"
+          ],
+          "exported": false,
+          "lineCount": 36
+        },
+        {
+          "name": "populateSelectOptions",
+          "params": [
+            "el"
+          ],
+          "exported": false,
+          "lineCount": 32
+        },
+        {
+          "name": "counter",
+          "params": [
+            "count"
+          ],
+          "exported": false,
+          "lineCount": 32
+        },
+        {
+          "name": "thousands",
+          "params": [
+            "value"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "textarea_height",
+          "params": [],
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "goto",
+          "params": [
+            "page"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "goto_handler",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "goto_calculator",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 22
+        },
+        {
+          "name": "dropdown_toggle",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "hide_dropdown",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "init_tab",
+          "params": [],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "tab_content_toggle",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "animateCSS",
+          "params": [
+            "element",
+            "animation"
+          ],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "getViewport",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "getMobileOperatingSystem",
+          "params": [],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "isValidDate",
+          "params": [
+            "date"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "downloadFile",
+          "params": [
+            "url",
+            "filename"
+          ],
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "checkNetwork",
+          "params": [],
+          "exported": false,
+          "lineCount": 48
+        },
+        {
+          "name": "universalSearch",
+          "params": [
+            "list",
+            "keyword",
+            "fields"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "accordion_toogle",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 33
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1202,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

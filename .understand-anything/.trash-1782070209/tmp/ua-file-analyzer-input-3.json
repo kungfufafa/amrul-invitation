@@ -1,0 +1,31 @@
+{
+  "projectRoot": "/Users/apriansyahrs/Documents/Code/amrul-wi",
+  "batchFiles": [
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp", "language": "webp", "sizeLines": 1796, "fileCategory": "code"},
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp", "language": "webp", "sizeLines": 923, "fileCategory": "code"},
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp", "language": "webp", "sizeLines": 1837, "fileCategory": "code"},
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp", "language": "webp", "sizeLines": 1122, "fileCategory": "code"},
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp", "language": "webp", "sizeLines": 2323, "fileCategory": "code"},
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp", "language": "webp", "sizeLines": 1049, "fileCategory": "code"},
+    {"path": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp", "language": "webp", "sizeLines": 2002, "fileCategory": "code"},
+    {"path": "plugin/flexbin/flexbin.css", "language": "css", "sizeLines": 91, "fileCategory": "markup"},
+    {"path": "plugin/slick/slick.css", "language": "css", "sizeLines": 109, "fileCategory": "markup"},
+    {"path": "src/jquery.js", "language": "javascript", "sizeLines": 5574, "fileCategory": "code"},
+    {"path": "src/js/html2canvas-1.4.1.1749130377.js", "language": "javascript", "sizeLines": 10615, "fileCategory": "code"},
+    {"path": "src/universal.js", "language": "javascript", "sizeLines": 1201, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp": [],
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp": [],
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp": [],
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp": [],
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp": [],
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp": [],
+    "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp": [],
+    "plugin/flexbin/flexbin.css": [],
+    "plugin/slick/slick.css": [],
+    "src/jquery.js": [],
+    "src/js/html2canvas-1.4.1.1749130377.js": [],
+    "src/universal.js": []
+  }
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "layer:entry",
+    "name": "Entry & Markup",
+    "description": "Single-page HTML shell for the Hani & Amrul wedding invitation, wiring script tags, stylesheet links, inline RSVP config, and all section markup.",
+    "nodeIds": [
+      "file:index.html"
+    ]
+  },
+  {
+    "id": "layer:application",
+    "name": "Application Logic",
+    "description": "Site-specific JavaScript that drives RSVP forms, AJAX posting, UI helpers, plugin initialization, and language selection for the wedding invitation.",
+    "nodeIds": [
+      "file:src/universal.js",
+      "file:public/dist/4964c82c.js"
+    ]
+  },
+  {
+    "id": "layer:vendor",
+    "name": "Vendor Libraries",
+    "description": "Third-party JavaScript libraries vendored locally—jQuery for DOM/events and html2canvas for invitation screenshot export.",
+    "nodeIds": [
+      "file:src/jquery.js",
+      "file:src/js/html2canvas-1.4.1.1749130377.js"
+    ]
+  },
+  {
+    "id": "layer:styles",
+    "name": "Styles & Plugins",
+    "description": "Compiled theme CSS bundle plus plugin stylesheets for flexbin gallery grid, Slick carousel, and lightGallery lightbox presentation.",
+    "nodeIds": [
+      "file:public/dist/ca7f5103.css",
+      "file:plugin/flexbin/flexbin.css",
+      "file:plugin/slick/slick.css",
+      "file:plugin/lightgallery/dist/css/lightgallery.css"
+    ]
+  },
+  {
+    "id": "layer:assets",
+    "name": "Media Assets",
+    "description": "Locally hosted wedding photos, gallery WebP variants, and Butler/Bebas Neue font files referenced by index.html and compiled CSS.",
+    "nodeIds": [
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "resource:media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "resource:media/external/BebasNeue_Regular.otf",
+      "resource:media/external/Butler_Bold.otf",
+      "resource:media/external/Butler_Light.otf",
+      "resource:media/external/Butler_Regular.otf",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp"
+    ]
+  },
+  {
+    "id": "layer:documentation",
+    "name": "Documentation",
+    "description": "Eight-part codebase cleanup audit documenting asset inventory, broken references, CDN migration analysis, findings register, and remediation plan.",
+    "nodeIds": [
+      "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md"
+    ]
+  },
+  {
+    "id": "layer:config",
+    "name": "Tooling & Config",
+    "description": "Understand-Anything plugin configuration and ignore patterns used for codebase analysis tooling, not runtime site behavior.",
+    "nodeIds": [
+      "config:.understand-anything/.understandignore",
+      "config:.understand-anything/config.json"
+    ]
+  }
+]

@@ -1,0 +1,225 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "sections": [
+        {
+          "heading": "autoUpdate",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "outputLanguage",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 3671,
+      "nonEmptyLines": 3309,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1063,
+      "nonEmptyLines": 1059,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 2602,
+      "nonEmptyLines": 2594,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1039,
+      "nonEmptyLines": 1036,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 2660,
+      "nonEmptyLines": 2649,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1100,
+      "nonEmptyLines": 1096,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 2643,
+      "nonEmptyLines": 2634,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1080,
+      "nonEmptyLines": 1075,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 2631,
+      "nonEmptyLines": 2621,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1198,
+      "nonEmptyLines": 1190,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 2964,
+      "nonEmptyLines": 2948,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1322,
+      "nonEmptyLines": 1317,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 3209,
+      "nonEmptyLines": 3192,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 1104,
+      "nonEmptyLines": 1098,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 2438,
+      "nonEmptyLines": 2429,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/BebasNeue_Regular.otf",
+      "language": "otf",
+      "fileCategory": "code",
+      "totalLines": 1152,
+      "nonEmptyLines": 1152,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/Butler_Bold.otf",
+      "language": "otf",
+      "fileCategory": "code",
+      "totalLines": 714,
+      "nonEmptyLines": 711,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/Butler_Light.otf",
+      "language": "otf",
+      "fileCategory": "code",
+      "totalLines": 685,
+      "nonEmptyLines": 683,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/Butler_Regular.otf",
+      "language": "otf",
+      "fileCategory": "code",
+      "totalLines": 704,
+      "nonEmptyLines": 704,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 682,
+      "nonEmptyLines": 680,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 473,
+      "nonEmptyLines": 473,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 989,
+      "nonEmptyLines": 986,
+      "metrics": {}
+    },
+    {
+      "path": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 889,
+      "nonEmptyLines": 887,
+      "metrics": {}
+    }
+  ]
+}

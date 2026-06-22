@@ -1,0 +1,1001 @@
+{
+  "nodes": [
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "summary": "External WebP thumbnail (1200×1200) hosted via imgbb, used as a gallery or hero image asset.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external 2000×2000 gallery image from imgbb CDN.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "summary": "External WebP gallery image (2000×2000) sourced from imgbb for wedding photo display.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external wedding gallery photo from imgbb.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "summary": "External WebP gallery image (2000×2000) for wedding invitation photo carousel or grid.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external wedding photo hosted on imgbb.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "type": "file",
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "filePath": "media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "summary": "External WebP gallery image (2000×2000) used in the wedding site photo section.",
+      "tags": [
+        "media",
+        "image",
+        "external",
+        "gallery"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Binary WebP image asset; line count reflects encoded file size, not source code."
+    },
+    {
+      "id": "file:plugin/flexbin/flexbin.css",
+      "type": "file",
+      "name": "flexbin.css",
+      "filePath": "plugin/flexbin/flexbin.css",
+      "summary": "Flexbin masonry gallery stylesheet defining flex-wrap image grid layout with responsive breakpoints.",
+      "tags": [
+        "stylesheet",
+        "gallery",
+        "layout",
+        "plugin"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:plugin/slick/slick.css",
+      "type": "file",
+      "name": "slick.css",
+      "filePath": "plugin/slick/slick.css",
+      "summary": "Slick carousel plugin base styles for slider track, list, arrows, and touch-friendly scrolling.",
+      "tags": [
+        "stylesheet",
+        "carousel",
+        "slider",
+        "plugin"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/jquery.js",
+      "type": "file",
+      "name": "jquery.js",
+      "filePath": "src/jquery.js",
+      "summary": "Vendored jQuery v3.5.1 library providing DOM manipulation, events, and AJAX utilities for the site.",
+      "tags": [
+        "vendor",
+        "jquery",
+        "dom",
+        "library"
+      ],
+      "complexity": "complex",
+      "languageNotes": "UMD-wrapped IIFE bundle; tree-sitter extraction yields no top-level named functions."
+    },
+    {
+      "id": "file:src/js/html2canvas-1.4.1.1749130377.js",
+      "type": "file",
+      "name": "html2canvas-1.4.1.1749130377.js",
+      "filePath": "src/js/html2canvas-1.4.1.1749130377.js",
+      "summary": "Vendored html2canvas 1.4.1 library that renders DOM elements to canvas for invitation screenshot export.",
+      "tags": [
+        "vendor",
+        "screenshot",
+        "canvas",
+        "library"
+      ],
+      "complexity": "complex",
+      "languageNotes": "UMD factory bundle exposing global html2canvas; no extractable top-level function nodes."
+    },
+    {
+      "id": "file:src/universal.js",
+      "type": "file",
+      "name": "universal.js",
+      "filePath": "src/universal.js",
+      "summary": "Core application JavaScript with shared UI helpers, AJAX posting, form widgets, and document-ready event bindings for the wedding site.",
+      "tags": [
+        "entry-point",
+        "utility",
+        "event-handler",
+        "ajax"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/universal.js:openModal",
+      "type": "function",
+      "name": "openModal",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        6,
+        22
+      ],
+      "summary": "Opens a modal overlay, optionally clearing any existing modal first and appending new content.",
+      "tags": [
+        "ui",
+        "modal",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:closeModal",
+      "type": "function",
+      "name": "closeModal",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        25,
+        34
+      ],
+      "summary": "Hides the primary modal, restores body scroll, and clears modal HTML content.",
+      "tags": [
+        "ui",
+        "modal",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:showAlert",
+      "type": "function",
+      "name": "showAlert",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        55,
+        64
+      ],
+      "summary": "Displays a styled alert message with optional auto-dismiss after a delay.",
+      "tags": [
+        "ui",
+        "alert",
+        "notification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:postData",
+      "type": "function",
+      "name": "postData",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        82,
+        169
+      ],
+      "summary": "Sends FormData via jQuery AJAX with loader, success/error callbacks, and upload progress hooks.",
+      "tags": [
+        "api-handler",
+        "ajax",
+        "network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:copyToClipboard",
+      "type": "function",
+      "name": "copyToClipboard",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        186,
+        211
+      ],
+      "summary": "Copies text to the clipboard using the legacy execCommand API with fallback handling.",
+      "tags": [
+        "utility",
+        "clipboard",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:getOffset",
+      "type": "function",
+      "name": "getOffset",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        221,
+        239
+      ],
+      "summary": "Calculates cumulative offset coordinates of a DOM element relative to the document.",
+      "tags": [
+        "utility",
+        "dom",
+        "positioning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:generate_tooltip",
+      "type": "function",
+      "name": "generate_tooltip",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        242,
+        345
+      ],
+      "summary": "Builds and positions a custom tooltip on hover with viewport-aware placement logic.",
+      "tags": [
+        "ui",
+        "tooltip",
+        "dom"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:generate_chart_data",
+      "type": "function",
+      "name": "generate_chart_data",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        353,
+        365
+      ],
+      "summary": "Transforms raw chart input data into formatted series values for visualization.",
+      "tags": [
+        "utility",
+        "chart",
+        "data"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:init_selectize",
+      "type": "function",
+      "name": "init_selectize",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        379,
+        397
+      ],
+      "summary": "Initializes Selectize dropdown widgets on matching elements with shared options.",
+      "tags": [
+        "ui",
+        "form",
+        "selectize"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:selectize_options",
+      "type": "function",
+      "name": "selectize_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        405,
+        417
+      ],
+      "summary": "Returns default Selectize configuration options for searchable dropdowns.",
+      "tags": [
+        "configuration",
+        "selectize",
+        "form"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:whatsapp_template_selection_options",
+      "type": "function",
+      "name": "whatsapp_template_selection_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        420,
+        457
+      ],
+      "summary": "Builds Selectize option list for WhatsApp message template selection.",
+      "tags": [
+        "form",
+        "whatsapp",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:whatsapp_template_selection",
+      "type": "function",
+      "name": "whatsapp_template_selection",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        460,
+        474
+      ],
+      "summary": "Handles WhatsApp template dropdown change events and updates related form state.",
+      "tags": [
+        "form",
+        "whatsapp",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection_options",
+      "type": "function",
+      "name": "guest_group_selection_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        477,
+        515
+      ],
+      "summary": "Builds Selectize option list for guest group filtering and selection.",
+      "tags": [
+        "form",
+        "rsvp",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection",
+      "type": "function",
+      "name": "guest_group_selection",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        518,
+        539
+      ],
+      "summary": "Responds to guest group dropdown changes and triggers dependent UI updates.",
+      "tags": [
+        "form",
+        "rsvp",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection_options",
+      "type": "function",
+      "name": "main_event_selection_options",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        542,
+        580
+      ],
+      "summary": "Builds Selectize option list for main wedding event selection.",
+      "tags": [
+        "form",
+        "event",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection",
+      "type": "function",
+      "name": "main_event_selection",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        583,
+        618
+      ],
+      "summary": "Handles main event dropdown changes and coordinates related form fields.",
+      "tags": [
+        "form",
+        "event",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:populateSelectOptions",
+      "type": "function",
+      "name": "populateSelectOptions",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        621,
+        652
+      ],
+      "summary": "Populates a select element with options from a data array and refreshes Selectize.",
+      "tags": [
+        "utility",
+        "form",
+        "selectize"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:counter",
+      "type": "function",
+      "name": "counter",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        655,
+        686
+      ],
+      "summary": "Animates numeric counters with progress bar width updates and formatted display.",
+      "tags": [
+        "ui",
+        "animation",
+        "counter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:thousands",
+      "type": "function",
+      "name": "thousands",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        689,
+        698
+      ],
+      "summary": "Formats numbers with thousands separators for display in counters and stats.",
+      "tags": [
+        "utility",
+        "formatting",
+        "number"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:textarea_height",
+      "type": "function",
+      "name": "textarea_height",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        701,
+        716
+      ],
+      "summary": "Auto-resizes textarea height to fit content on keyup and focus events.",
+      "tags": [
+        "ui",
+        "form",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:goto_calculator",
+      "type": "function",
+      "name": "goto_calculator",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        731,
+        752
+      ],
+      "summary": "Navigates to a calculator page with query parameters derived from link attributes.",
+      "tags": [
+        "navigation",
+        "utility",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:init_tab",
+      "type": "function",
+      "name": "init_tab",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        769,
+        781
+      ],
+      "summary": "Activates the default tab on page load by triggering click on marked tab nav items.",
+      "tags": [
+        "ui",
+        "tabs",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:tab_content_toggle",
+      "type": "function",
+      "name": "tab_content_toggle",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        784,
+        800
+      ],
+      "summary": "Switches active tab state and shows/hides associated tab content panels.",
+      "tags": [
+        "ui",
+        "tabs",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:animateCSS",
+      "type": "function",
+      "name": "animateCSS",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        803,
+        835
+      ],
+      "summary": "Applies Animate.css classes to an element and removes them after animation ends.",
+      "tags": [
+        "ui",
+        "animation",
+        "css"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:getViewport",
+      "type": "function",
+      "name": "getViewport",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        838,
+        847
+      ],
+      "summary": "Returns current viewport width and height from window dimensions.",
+      "tags": [
+        "utility",
+        "viewport",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:getMobileOperatingSystem",
+      "type": "function",
+      "name": "getMobileOperatingSystem",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        855,
+        873
+      ],
+      "summary": "Detects mobile OS (iOS, Android, Windows Phone) from user agent string.",
+      "tags": [
+        "utility",
+        "mobile",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:downloadFile",
+      "type": "function",
+      "name": "downloadFile",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        882,
+        902
+      ],
+      "summary": "Triggers a file download by creating a temporary anchor element with blob URL.",
+      "tags": [
+        "utility",
+        "download",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:checkNetwork",
+      "type": "function",
+      "name": "checkNetwork",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        905,
+        952
+      ],
+      "summary": "Monitors online/offline status and shows alerts when network connectivity changes.",
+      "tags": [
+        "network",
+        "event-handler",
+        "notification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/universal.js:universalSearch",
+      "type": "function",
+      "name": "universalSearch",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        955,
+        967
+      ],
+      "summary": "Filters DOM elements by matching search query text against element content.",
+      "tags": [
+        "utility",
+        "search",
+        "dom"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/universal.js:accordion_toogle",
+      "type": "function",
+      "name": "accordion_toogle",
+      "filePath": "src/universal.js",
+      "lineRange": [
+        1028,
+        1060
+      ],
+      "summary": "Toggles accordion panel expand/collapse with slide animations within a wrapper.",
+      "tags": [
+        "ui",
+        "accordion",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:openModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:closeModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:showAlert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:postData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:copyToClipboard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:getOffset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:generate_tooltip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:generate_chart_data",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:whatsapp_template_selection_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:whatsapp_template_selection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:guest_group_selection_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:guest_group_selection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:main_event_selection_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:main_event_selection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:populateSelectOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:thousands",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:textarea_height",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:goto_calculator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:init_tab",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:tab_content_toggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:animateCSS",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:getViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:getMobileOperatingSystem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:downloadFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:checkNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:universalSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "function:src/universal.js:accordion_toogle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/universal.js",
+      "target": "file:src/jquery.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:src/universal.js:openModal",
+      "target": "function:src/universal.js:closeModal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:postData",
+      "target": "function:src/universal.js:showAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:copyToClipboard",
+      "target": "function:src/universal.js:showAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:whatsapp_template_selection_options",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:whatsapp_template_selection",
+      "target": "function:src/universal.js:whatsapp_template_selection_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:whatsapp_template_selection",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:guest_group_selection_options",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:guest_group_selection",
+      "target": "function:src/universal.js:guest_group_selection_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:guest_group_selection",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection_options",
+      "target": "function:src/universal.js:selectize_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection",
+      "target": "function:src/universal.js:main_event_selection_options",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection",
+      "target": "function:src/universal.js:init_selectize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/universal.js:main_event_selection",
+      "target": "function:src/universal.js:populateSelectOptions",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -3267,7 +3267,12 @@ function renderLanguageToggle() {
   );
   const e = document.querySelector("#language-select"),
     t = window.DEFAULT_LANG ?? "ID",
-    n = getCookie("template_lang") || t,
+    n = (() => {
+      const e = new URLSearchParams(window.location.search)
+        .get("lang")
+        ?.toUpperCase();
+      return ["ID", "EN"].includes(e) ? e : getCookie("template_lang") || t;
+    })(),
     a = {
       maxItems: 1,
       valueField: "id",
@@ -3277,12 +3282,12 @@ function renderLanguageToggle() {
         {
           id: "ID",
           title: "ID",
-          flag: "https://katsudoto.id/media/kat/Indonesia-flag.png",
+          flag: "./media/icons/flag-id.svg",
         },
         {
           id: "EN",
           title: "EN",
-          flag: "https://katsudoto.id/media/kat/English-flag.png",
+          flag: "./media/icons/flag-en.svg",
         },
       ],
       create: !1,
@@ -3307,7 +3312,9 @@ function renderLanguageToggle() {
         this.setValue(n, !0), (window.languageSelectize = this);
       },
       onChange: function (e) {
-        setCookie("template_lang", e, 365), window.location.reload();
+        setCookie("template_lang", e, 365);
+        const t = new URL(window.location.href);
+        t.searchParams.set("lang", e.toLowerCase()), window.location.assign(t);
       },
     };
   $(e).selectize(a);

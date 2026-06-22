@@ -1,0 +1,768 @@
+{
+  "scriptCompleted": true,
+  "entryPointCandidates": [
+    {
+      "id": "file:index.html",
+      "score": 5,
+      "name": "index.html",
+      "summary": "Single-page wedding invitation entry point for Hani and Amrul featuring inline config (RSVP, music, layouts), Alsa template sections, CDN plugins, and embedded media references."
+    },
+    {
+      "id": "file:src/universal.js",
+      "score": 3,
+      "name": "universal.js",
+      "summary": "Core application JavaScript with shared UI helpers, AJAX posting, form widgets, and document-ready event bindings for the wedding site."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "score": 1,
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "summary": "External WebP thumbnail (1200×1200) hosted via imgbb, used as a gallery or hero image asset."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "score": 1,
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "summary": "Alternate-resolution WebP variant of an external 2000×2000 gallery image from imgbb CDN."
+    },
+    {
+      "id": "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "score": 1,
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "summary": "External WebP gallery image (2000×2000) sourced from imgbb for wedding photo display."
+    }
+  ],
+  "fanInRanking": [
+    {
+      "id": "file:index.html",
+      "fanIn": 10,
+      "name": "index.html"
+    },
+    {
+      "id": "function:src/universal.js:init_selectize",
+      "fanIn": 4,
+      "name": "function:src/universal.js:init_selectize"
+    },
+    {
+      "id": "function:src/universal.js:selectize_options",
+      "fanIn": 4,
+      "name": "function:src/universal.js:selectize_options"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "fanIn": 3,
+      "name": "01_TECHNICAL_BASELINE.md"
+    },
+    {
+      "id": "file:public/dist/4964c82c.js",
+      "fanIn": 3,
+      "name": "4964c82c.js"
+    },
+    {
+      "id": "file:src/jquery.js",
+      "fanIn": 3,
+      "name": "jquery.js"
+    },
+    {
+      "id": "function:src/universal.js:showAlert",
+      "fanIn": 3,
+      "name": "function:src/universal.js:showAlert"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "fanIn": 2,
+      "name": "02_ASSET_INVENTORY.md"
+    },
+    {
+      "id": "function:src/universal.js:closeModal",
+      "fanIn": 2,
+      "name": "function:src/universal.js:closeModal"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection_options",
+      "fanIn": 2,
+      "name": "function:src/universal.js:guest_group_selection_options"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection_options",
+      "fanIn": 2,
+      "name": "function:src/universal.js:main_event_selection_options"
+    },
+    {
+      "id": "function:src/universal.js:populateSelectOptions",
+      "fanIn": 2,
+      "name": "function:src/universal.js:populateSelectOptions"
+    },
+    {
+      "id": "function:src/universal.js:whatsapp_template_selection_options",
+      "fanIn": 2,
+      "name": "function:src/universal.js:whatsapp_template_selection_options"
+    },
+    {
+      "id": "config:.understand-anything/.understandignore",
+      "fanIn": 1,
+      "name": ".understandignore"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "fanIn": 1,
+      "name": "03_BROKEN_AND_MISSING_ASSETS.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "fanIn": 1,
+      "name": "04_UNUSED_AND_DUPLICATE_FINDINGS.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "fanIn": 1,
+      "name": "05_CDN_MIGRATION_ANALYSIS.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "fanIn": 1,
+      "name": "06_FINDINGS_REGISTER.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "fanIn": 1,
+      "name": "07_REMEDIATION_PLAN.md"
+    },
+    {
+      "id": "file:plugin/flexbin/flexbin.css",
+      "fanIn": 1,
+      "name": "flexbin.css"
+    }
+  ],
+  "fanOutRanking": [
+    {
+      "id": "file:src/universal.js",
+      "fanOut": 31,
+      "name": "universal.js"
+    },
+    {
+      "id": "file:index.html",
+      "fanOut": 21,
+      "name": "index.html"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+      "fanOut": 4,
+      "name": "01_TECHNICAL_BASELINE.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+      "fanOut": 4,
+      "name": "02_ASSET_INVENTORY.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+      "fanOut": 4,
+      "name": "03_BROKEN_AND_MISSING_ASSETS.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+      "fanOut": 4,
+      "name": "06_FINDINGS_REGISTER.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "fanOut": 3,
+      "name": "04_UNUSED_AND_DUPLICATE_FINDINGS.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+      "fanOut": 3,
+      "name": "05_CDN_MIGRATION_ANALYSIS.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+      "fanOut": 3,
+      "name": "07_REMEDIATION_PLAN.md"
+    },
+    {
+      "id": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+      "fanOut": 3,
+      "name": "08_EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection",
+      "fanOut": 3,
+      "name": "function:src/universal.js:main_event_selection"
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "fanOut": 2,
+      "name": "config.json"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection",
+      "fanOut": 2,
+      "name": "function:src/universal.js:guest_group_selection"
+    },
+    {
+      "id": "function:src/universal.js:whatsapp_template_selection",
+      "fanOut": 2,
+      "name": "function:src/universal.js:whatsapp_template_selection"
+    },
+    {
+      "id": "config:.understand-anything/.understandignore",
+      "fanOut": 1,
+      "name": ".understandignore"
+    },
+    {
+      "id": "function:src/universal.js:copyToClipboard",
+      "fanOut": 1,
+      "name": "function:src/universal.js:copyToClipboard"
+    },
+    {
+      "id": "function:src/universal.js:guest_group_selection_options",
+      "fanOut": 1,
+      "name": "function:src/universal.js:guest_group_selection_options"
+    },
+    {
+      "id": "function:src/universal.js:main_event_selection_options",
+      "fanOut": 1,
+      "name": "function:src/universal.js:main_event_selection_options"
+    },
+    {
+      "id": "function:src/universal.js:openModal",
+      "fanOut": 1,
+      "name": "function:src/universal.js:openModal"
+    },
+    {
+      "id": "function:src/universal.js:postData",
+      "fanOut": 1,
+      "name": "function:src/universal.js:postData"
+    }
+  ],
+  "bfsTraversal": {
+    "startNode": "file:index.html",
+    "order": [
+      "file:index.html",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "resource:media/external/BebasNeue_Regular.otf",
+      "resource:media/external/Butler_Bold.otf",
+      "resource:media/external/Butler_Light.otf",
+      "resource:media/external/Butler_Regular.otf"
+    ],
+    "depthMap": {
+      "file:index.html": 0,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp": 1,
+      "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp": 1,
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp": 1,
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp": 1,
+      "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp": 1,
+      "resource:media/external/BebasNeue_Regular.otf": 1,
+      "resource:media/external/Butler_Bold.otf": 1,
+      "resource:media/external/Butler_Light.otf": 1,
+      "resource:media/external/Butler_Regular.otf": 1
+    },
+    "byDepth": {
+      "0": [
+        "file:index.html"
+      ],
+      "1": [
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+        "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+        "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+        "resource:media/external/BebasNeue_Regular.otf",
+        "resource:media/external/Butler_Bold.otf",
+        "resource:media/external/Butler_Light.otf",
+        "resource:media/external/Butler_Regular.otf"
+      ]
+    }
+  },
+  "nonCodeFiles": {
+    "documentation": [
+      {
+        "id": "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md",
+        "name": "01_TECHNICAL_BASELINE.md",
+        "type": "document",
+        "summary": "Establishes the static wedding-invitation technical baseline: stack (HTML/jQuery/plugins), asset flow without a build step, folder map, runtime smoke-test results, functional features to preserve, and audit scope limitations."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md",
+        "name": "02_ASSET_INVENTORY.md",
+        "type": "document",
+        "summary": "Catalogs 191 local assets (33.01 MiB) across media, plugin, public/dist, and src with per-group reference tracing, duplicate status, confidence ratings, and inventory exclusion rules."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md",
+        "name": "03_BROKEN_AND_MISSING_ASSETS.md",
+        "type": "document",
+        "summary": "Documents confirmed broken and missing assets including Orn-64.png, incomplete lightGallery distribution, missing html2canvas source map, stale commented template script, and root-relative URL deployment risk."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+        "name": "04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+        "type": "document",
+        "summary": "Lists high-confidence unused asset, duplicate-hash, dead-code, and unused-dependency candidates with evidence, removal risk, and SHA-256 duplicate groups; no deletions performed by the audit."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md",
+        "name": "05_CDN_MIGRATION_ANALYSIS.md",
+        "type": "document",
+        "summary": "Evaluates each CDN and local library dependency with conservative migration recommendations, prioritizing KEEP_LOCAL for critical plugins and pinning/SRI hardening for unpinned third-party URLs."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md",
+        "name": "06_FINDINGS_REGISTER.md",
+        "type": "document",
+        "summary": "Consolidated findings register merging asset, dead-code, CDN security, and metadata issues with severity, evidence, user impact, risk, and confidence for each tracked finding ID."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md",
+        "name": "07_REMEDIATION_PLAN.md",
+        "type": "document",
+        "summary": "Defines seven isolated PR phases from smoke-test baseline through asset repair, dead-file removal, CDN hardening, optional build pipeline, and final validation with explicit scope and rollback rules."
+      },
+      {
+        "id": "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md",
+        "name": "08_EXECUTIVE_SUMMARY.md",
+        "type": "document",
+        "summary": "Executive verdict that bulk deletion and CDN migration are not ready; recommends safety-net PR, two targeted asset repairs, ordered quick wins, and lists unsafe areas requiring extra evidence before change."
+      }
+    ],
+    "infrastructure": [
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail variant of a gallery photo used in the lightgallery photo section."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+        "type": "resource",
+        "summary": "Full-size WebP gallery image linked as the lightbox target for gallery photo entry."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail for a wedding gallery photo displayed in the flexbin grid."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+        "type": "resource",
+        "summary": "Full-resolution WebP gallery image opened in the lightgallery lightbox viewer."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail for a wedding gallery photo in the photo gallery section."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+        "type": "resource",
+        "summary": "Full-size WebP gallery image used as the lightgallery href target."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail variant for a gallery grid cell in index.html."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+        "type": "resource",
+        "summary": "Full-resolution WebP wedding gallery photo for lightbox viewing."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail for a gallery photo in the invitation site."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+        "type": "resource",
+        "summary": "Full-size WebP gallery image referenced by lightgallery href in index.html."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail for a wedding photo gallery entry."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+        "type": "resource",
+        "summary": "Full-resolution WebP gallery photo opened in the lightbox viewer."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP thumbnail for the final gallery photo in the grid."
+      },
+      {
+        "id": "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+        "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+        "type": "resource",
+        "summary": "Full-size WebP gallery image for lightgallery in the photo section."
+      },
+      {
+        "id": "resource:media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+        "name": "dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+        "type": "resource",
+        "summary": "Orphaned WebP thumbnail asset (800×800) with no references in HTML, CSS, or JS; candidate for removal."
+      },
+      {
+        "id": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+        "name": "ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP portrait of one partner displayed in the couple section with lightgallery."
+      },
+      {
+        "id": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+        "name": "ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+        "type": "resource",
+        "summary": "Full-size WebP couple portrait used as the lightgallery href in the couple section."
+      },
+      {
+        "id": "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+        "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+        "type": "resource",
+        "summary": "Responsive WebP portrait of the second partner in the couple section."
+      },
+      {
+        "id": "resource:media/external/BebasNeue_Regular.otf",
+        "name": "BebasNeue_Regular.otf",
+        "type": "resource",
+        "summary": "Bebas Neue regular OpenType font loaded via @font-face in compiled CSS for display headings."
+      },
+      {
+        "id": "resource:media/external/Butler_Bold.otf",
+        "name": "Butler_Bold.otf",
+        "type": "resource",
+        "summary": "Butler Bold OpenType font used for emphasis typography in the Alsa wedding template styles."
+      },
+      {
+        "id": "resource:media/external/Butler_Light.otf",
+        "name": "Butler_Light.otf",
+        "type": "resource",
+        "summary": "Butler Light OpenType font providing light-weight serif typography in template CSS."
+      },
+      {
+        "id": "resource:media/external/Butler_Regular.otf",
+        "name": "Butler_Regular.otf",
+        "type": "resource",
+        "summary": "Butler Regular OpenType font used as the primary serif body and heading typeface."
+      }
+    ],
+    "data": [],
+    "config": [
+      {
+        "id": "config:.understand-anything/.understandignore",
+        "name": ".understandignore",
+        "type": "config",
+        "summary": "Understand-Anything exclusion patterns file using gitignore syntax to skip directories and test files from codebase analysis."
+      },
+      {
+        "id": "config:.understand-anything/config.json",
+        "name": "config.json",
+        "type": "config",
+        "summary": "Understand-Anything plugin settings disabling auto-update and setting English as the documentation output language."
+      }
+    ]
+  },
+  "clusters": [],
+  "layers": {
+    "count": 0,
+    "list": []
+  },
+  "nodeSummaryIndex": {
+    "document:docs/codebase-cleanup-audit/01_TECHNICAL_BASELINE.md": {
+      "name": "01_TECHNICAL_BASELINE.md",
+      "type": "document",
+      "summary": "Establishes the static wedding-invitation technical baseline: stack (HTML/jQuery/plugins), asset flow without a build step, folder map, runtime smoke-test results, functional features to preserve, and audit scope limitations."
+    },
+    "document:docs/codebase-cleanup-audit/02_ASSET_INVENTORY.md": {
+      "name": "02_ASSET_INVENTORY.md",
+      "type": "document",
+      "summary": "Catalogs 191 local assets (33.01 MiB) across media, plugin, public/dist, and src with per-group reference tracing, duplicate status, confidence ratings, and inventory exclusion rules."
+    },
+    "document:docs/codebase-cleanup-audit/03_BROKEN_AND_MISSING_ASSETS.md": {
+      "name": "03_BROKEN_AND_MISSING_ASSETS.md",
+      "type": "document",
+      "summary": "Documents confirmed broken and missing assets including Orn-64.png, incomplete lightGallery distribution, missing html2canvas source map, stale commented template script, and root-relative URL deployment risk."
+    },
+    "document:docs/codebase-cleanup-audit/04_UNUSED_AND_DUPLICATE_FINDINGS.md": {
+      "name": "04_UNUSED_AND_DUPLICATE_FINDINGS.md",
+      "type": "document",
+      "summary": "Lists high-confidence unused asset, duplicate-hash, dead-code, and unused-dependency candidates with evidence, removal risk, and SHA-256 duplicate groups; no deletions performed by the audit."
+    },
+    "document:docs/codebase-cleanup-audit/05_CDN_MIGRATION_ANALYSIS.md": {
+      "name": "05_CDN_MIGRATION_ANALYSIS.md",
+      "type": "document",
+      "summary": "Evaluates each CDN and local library dependency with conservative migration recommendations, prioritizing KEEP_LOCAL for critical plugins and pinning/SRI hardening for unpinned third-party URLs."
+    },
+    "document:docs/codebase-cleanup-audit/06_FINDINGS_REGISTER.md": {
+      "name": "06_FINDINGS_REGISTER.md",
+      "type": "document",
+      "summary": "Consolidated findings register merging asset, dead-code, CDN security, and metadata issues with severity, evidence, user impact, risk, and confidence for each tracked finding ID."
+    },
+    "document:docs/codebase-cleanup-audit/07_REMEDIATION_PLAN.md": {
+      "name": "07_REMEDIATION_PLAN.md",
+      "type": "document",
+      "summary": "Defines seven isolated PR phases from smoke-test baseline through asset repair, dead-file removal, CDN hardening, optional build pipeline, and final validation with explicit scope and rollback rules."
+    },
+    "document:docs/codebase-cleanup-audit/08_EXECUTIVE_SUMMARY.md": {
+      "name": "08_EXECUTIVE_SUMMARY.md",
+      "type": "document",
+      "summary": "Executive verdict that bulk deletion and CDN migration are not ready; recommends safety-net PR, two targeted asset repairs, ordered quick wins, and lists unsafe areas requiring extra evidence before change."
+    },
+    "config:.understand-anything/.understandignore": {
+      "name": ".understandignore",
+      "type": "config",
+      "summary": "Understand-Anything exclusion patterns file using gitignore syntax to skip directories and test files from codebase analysis."
+    },
+    "config:.understand-anything/config.json": {
+      "name": "config.json",
+      "type": "config",
+      "summary": "Understand-Anything plugin settings disabling auto-update and setting English as the documentation output language."
+    },
+    "file:index.html": {
+      "name": "index.html",
+      "type": "file",
+      "summary": "Single-page wedding invitation entry point for Hani and Amrul featuring inline config (RSVP, music, layouts), Alsa template sections, CDN plugins, and embedded media references."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail variant of a gallery photo used in the lightgallery photo section."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTA4MjMtMjAwMC0yMDAwLTVhY2NhNTE3NzRkODA0ZmNjMTIwMTA3Ny0xZDljYjguanBn.webp",
+      "type": "resource",
+      "summary": "Full-size WebP gallery image linked as the lightbox target for gallery photo entry."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail for a wedding gallery photo displayed in the flexbin grid."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjctMjAwMC0yMDAwLTY2MmEyZjE1ZWE3ZGE1ODYwNmQ2MTY4My05MTcwYmEuanBn.webp",
+      "type": "resource",
+      "summary": "Full-resolution WebP gallery image opened in the lightgallery lightbox viewer."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail for a wedding gallery photo in the photo gallery section."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjktMjAwMC0yMDAwLWMzODI0MDE3YTNiNTAxZTYyNTI5Njk0OS1hMzM1NmMuanBn.webp",
+      "type": "resource",
+      "summary": "Full-size WebP gallery image used as the lightgallery href target."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail variant for a gallery grid cell in index.html."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMjUtMjAwMC0yMDAwLTJkNmNmMjM4OWQxYmFhYzA0MDFlZjhkNi0yNjg3Y2MuanBn.webp",
+      "type": "resource",
+      "summary": "Full-resolution WebP wedding gallery photo for lightbox viewing."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail for a gallery photo in the invitation site."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzEtMjAwMC0yMDAwLTcxZmMwMWQyNTA3YWI0ZjVkYzc4MGU0NC1kNjA1MWUuanBn.webp",
+      "type": "resource",
+      "summary": "Full-size WebP gallery image referenced by lightgallery href in index.html."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail for a wedding photo gallery entry."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzMtMjAwMC0yMDAwLTMyYjBjNmM0YWNmYmNmMTNhZWY2M2RkZS01YjA4YTAuanBn.webp",
+      "type": "resource",
+      "summary": "Full-resolution WebP gallery photo opened in the lightbox viewer."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP thumbnail for the final gallery photo in the grid."
+    },
+    "resource:media/external/3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp": {
+      "name": "3RodW1ibmFpbC90aHVtYi1sZy04OTMzMzUtMjAwMC0yMDAwLWI3ZWY0NDcxY2MyYTgyMTFiY2M2ODZhOS03Zjk5NGYuanBn.webp",
+      "type": "resource",
+      "summary": "Full-size WebP gallery image for lightgallery in the photo section."
+    },
+    "resource:media/external/dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp": {
+      "name": "dW1ibmFpbC90aHVtYi1sZy04OTA5MDMtODAwLTgwMC0xNzc3Mjc3Njg2LTA4MTBkNTgyMWViMzZlNTRkYTAyODM1NC5wbmc.webp",
+      "type": "resource",
+      "summary": "Orphaned WebP thumbnail asset (800×800) with no references in HTML, CSS, or JS; candidate for removal."
+    },
+    "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP portrait of one partner displayed in the couple section with lightgallery."
+    },
+    "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3ODktMTIwMC0xMjAwLTE3NzcyNzgxNzYtOWNkYjU1YzVlZGQwYzUwYjUyOGU0OTk3LnBuZw.webp",
+      "type": "resource",
+      "summary": "Full-size WebP couple portrait used as the lightgallery href in the couple section."
+    },
+    "resource:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw_1.webp",
+      "type": "resource",
+      "summary": "Responsive WebP portrait of the second partner in the couple section."
+    },
+    "resource:media/external/BebasNeue_Regular.otf": {
+      "name": "BebasNeue_Regular.otf",
+      "type": "resource",
+      "summary": "Bebas Neue regular OpenType font loaded via @font-face in compiled CSS for display headings."
+    },
+    "resource:media/external/Butler_Bold.otf": {
+      "name": "Butler_Bold.otf",
+      "type": "resource",
+      "summary": "Butler Bold OpenType font used for emphasis typography in the Alsa wedding template styles."
+    },
+    "resource:media/external/Butler_Light.otf": {
+      "name": "Butler_Light.otf",
+      "type": "resource",
+      "summary": "Butler Light OpenType font providing light-weight serif typography in template CSS."
+    },
+    "resource:media/external/Butler_Regular.otf": {
+      "name": "Butler_Regular.otf",
+      "type": "resource",
+      "summary": "Butler Regular OpenType font used as the primary serif body and heading typeface."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTA3OTMtMTIwMC0xMjAwLTE3NzcyNzgxNTAtMDgwYTVlY2Q5ODg2NDc1NjVjMWJlMjQ5LnBuZw.webp",
+      "type": "file",
+      "summary": "External WebP thumbnail (1200×1200) hosted via imgbb, used as a gallery or hero image asset."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw_1.webp",
+      "type": "file",
+      "summary": "Alternate-resolution WebP variant of an external 2000×2000 gallery image from imgbb CDN."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjEtMjAwMC0yMDAwLTE3Nzc1MzMyNzctZTNhNWRjZjg0MTM1YzhhMWIyOGU0YTcxLmpwZw.webp",
+      "type": "file",
+      "summary": "External WebP gallery image (2000×2000) sourced from imgbb for wedding photo display."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw_1.webp",
+      "type": "file",
+      "summary": "Alternate-resolution WebP variant of an external wedding gallery photo from imgbb."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMjMtMjAwMC0yMDAwLTE3Nzc1MzMyODgtZDMwMTI2ZGZlNDUxOGMyMDZiYzBjYWMyLmpwZw.webp",
+      "type": "file",
+      "summary": "External WebP gallery image (2000×2000) for wedding invitation photo carousel or grid."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw_1.webp",
+      "type": "file",
+      "summary": "Alternate-resolution WebP variant of an external wedding photo hosted on imgbb."
+    },
+    "file:media/external/ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp": {
+      "name": "ibmFpbC90aHVtYi1sZy04OTMzMTktMjAwMC0yMDAwLTE3Nzc1MzMyNjUtNmZjYThhNjliZjcyNDRlMzQ5MDdiODE1LmpwZw.webp",
+      "type": "file",
+      "summary": "External WebP gallery image (2000×2000) used in the wedding site photo section."
+    },
+    "file:plugin/flexbin/flexbin.css": {
+      "name": "flexbin.css",
+      "type": "file",
+      "summary": "Flexbin masonry gallery stylesheet defining flex-wrap image grid layout with responsive breakpoints."
+    },
+    "file:plugin/slick/slick.css": {
+      "name": "slick.css",
+      "type": "file",
+      "summary": "Slick carousel plugin base styles for slider track, list, arrows, and touch-friendly scrolling."
+    },
+    "file:src/jquery.js": {
+      "name": "jquery.js",
+      "type": "file",
+      "summary": "Vendored jQuery v3.5.1 library providing DOM manipulation, events, and AJAX utilities for the site."
+    },
+    "file:src/js/html2canvas-1.4.1.1749130377.js": {
+      "name": "html2canvas-1.4.1.1749130377.js",
+      "type": "file",
+      "summary": "Vendored html2canvas 1.4.1 library that renders DOM elements to canvas for invitation screenshot export."
+    },
+    "file:src/universal.js": {
+      "name": "universal.js",
+      "type": "file",
+      "summary": "Core application JavaScript with shared UI helpers, AJAX posting, form widgets, and document-ready event bindings for the wedding site."
+    },
+    "file:public/dist/4964c82c.js": {
+      "name": "4964c82c.js",
+      "type": "file",
+      "summary": "Hash-named application JavaScript bundle referenced from index.html; initializes AOS, lightGallery, Slick, Selectize, modal-video, Video.js, tsParticles, forms/AJAX, and language selection."
+    },
+    "file:public/dist/ca7f5103.css": {
+      "name": "ca7f5103.css",
+      "type": "file",
+      "summary": "Hash-named theme CSS bundle linked from index.html; includes ALSA template frame/background custom properties and typography references."
+    },
+    "file:plugin/lightgallery/dist/css/lightgallery.css": {
+      "name": "lightgallery.css",
+      "type": "file",
+      "summary": "lightGallery v1.4.1-beta.0 stylesheet declaring fonts, loading indicator, and video-provider graphics via relative URLs; distribution missing dist/fonts and dist/img assets."
+    }
+  },
+  "totalNodes": 48,
+  "totalEdges": 96
+}
