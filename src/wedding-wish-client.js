@@ -1,17 +1,25 @@
 const MAX_NAME_LENGTH = 80;
 const MAX_MESSAGE_LENGTH = 1000;
 
+// Resolve a UI string from the shared window.TRANSLATIONS dictionary for the
+// active language (set in index.html). Supports a single {n} placeholder for
+// numeric interpolation (e.g. validation length limits). Falls back to the key.
+function t(key, n) {
+  const value = typeof window !== "undefined" && typeof window.t9n === "function" ? window.t9n(key) : key;
+  return n == null ? value : String(value).replace("{n}", String(n));
+}
+
 export function normalizeWish({ name, message }) {
   const normalizedName = String(name ?? "").trim().replace(/\s+/g, " ");
   const normalizedMessage = String(message ?? "").trim();
 
-  if (!normalizedName) throw new Error("Nama wajib diisi.");
-  if (!normalizedMessage) throw new Error("Ucapan wajib diisi.");
+  if (!normalizedName) throw new Error(t("wish_err_name"));
+  if (!normalizedMessage) throw new Error(t("wish_err_message"));
   if (normalizedName.length > MAX_NAME_LENGTH) {
-    throw new Error(`Nama maksimal ${MAX_NAME_LENGTH} karakter.`);
+    throw new Error(t("wish_err_name_len", MAX_NAME_LENGTH));
   }
   if (normalizedMessage.length > MAX_MESSAGE_LENGTH) {
-    throw new Error(`Ucapan maksimal ${MAX_MESSAGE_LENGTH} karakter.`);
+    throw new Error(t("wish_err_message_len", MAX_MESSAGE_LENGTH));
   }
 
   return { name: normalizedName, message: normalizedMessage };
@@ -51,7 +59,8 @@ export function formatWishDate(value) {
   const timestamp = new Date(value);
   if (Number.isNaN(timestamp.valueOf())) return "";
 
-  return timestamp.toLocaleString("en-GB", {
+  const locale = typeof window !== "undefined" && window.CURRENT_LANG === "ID" ? "id-ID" : "en-GB";
+  return timestamp.toLocaleString(locale, {
     timeZone: "Asia/Jakarta",
     day: "numeric",
     month: "short",
