@@ -120,21 +120,6 @@
   --rgb-tertiary-clr: 144, 144, 144;
   --btn-default: #d4cfc2;
   --btn-default-rgb: 212, 207, 194;
-  --orn-party-gold-01: url(https://katsudoto.id/media/template/icon/gold/01.png);
-  --orn-party-gold-02: url(https://katsudoto.id/media/template/icon/gold/02.png);
-  --orn-party-gold-03: url(https://katsudoto.id/media/template/icon/gold/03.png);
-  --orn-party-gold-04: url(https://katsudoto.id/media/template/icon/gold/04.png);
-  --orn-party-gold-05: url(https://katsudoto.id/media/template/icon/gold/05.png);
-  --orn-party-gray-01: url(https://katsudoto.id/media/template/icon/gray/01.png);
-  --orn-party-gray-02: url(https://katsudoto.id/media/template/icon/gray/02.png);
-  --orn-party-gray-03: url(https://katsudoto.id/media/template/icon/gray/03.png);
-  --orn-party-gray-04: url(https://katsudoto.id/media/template/icon/gray/04.png);
-  --orn-party-gray-05: url(https://katsudoto.id/media/template/icon/gray/05.png);
-  --orn-party-light-01: url(https://katsudoto.id/media/template/icon/light/01.png);
-  --orn-party-light-02: url(https://katsudoto.id/media/template/icon/light/02.png);
-  --orn-party-light-03: url(https://katsudoto.id/media/template/icon/light/03.png);
-  --orn-party-light-04: url(https://katsudoto.id/media/template/icon/light/04.png);
-  --orn-party-light-05: url(https://katsudoto.id/media/template/icon/light/05.png);
   --roboto: "Roboto", sans-serif;
   --butler-bold: "Butler Bold", sans-serif;
   --butler-light: "Butler Light", sans-serif;
@@ -205,38 +190,7 @@ body {
   --button-background-secondary-rgb: 0, 0, 0;
   -webkit-overflow-scrolling: touch;
 }
-body.nanda-special {
-  --primary-clr: #d6a59a;
-  --primary-dark-clr: #b37d70;
-  --secondary-clr: #e9f7f4;
-  --secondary-dark-clr: #3f636a;
-  --wood-clr: #e2b744;
-  --font-clr: #464646;
-  --tertiary-clr: #f5ebdd;
-  --rgb-primary-clr: 214, 165, 154;
-  --rgb-primary-dark-clr: 179, 125, 112;
-  --rgb-secondary-clr: 233, 247, 244;
-  --rgb-secondary-dark-clr: 63, 99, 106;
-  --rgb-wood-clr: 226, 183, 68;
-  --rgb-font-clr: 70, 70, 70;
-  --orn-01: url(https://katsudoto.id/media/template/nanda/01/orn-01.png);
-  --orn-02: url(https://katsudoto.id/media/template/nanda/01/orn-02.png);
-  --orn-03: url(https://katsudoto.id/media/template/nanda/01/orn-03.png);
-  --orn-04: url(https://katsudoto.id/media/template/nanda/01/orn-04.png);
-  --orn-05: url(https://katsudoto.id/media/template/nanda/01/orn-05.png);
-  --orn-06: url(https://katsudoto.id/media/template/nanda/01/orn-06.png);
-  --orn-07: url(https://katsudoto.id/media/template/nanda/01/orn-07.png);
-  --orn-08: url(https://katsudoto.id/media/template/nanda/01/orn-08.png);
-  --orn-cover-desktop: url(https://katsudoto.id/media/template/nanda/01/orn-cover-desktop.png);
-  --orn-cover-tablet: url(https://katsudoto.id/media/template/nanda/01/orn-cover-tablet.png);
-  --orn-cover-mobile: url(https://katsudoto.id/media/template/nanda/01/orn-cover-mobile.png);
-  --bg-cover: url(https://katsudoto.id/media/template/nanda/01/bg-cover.png);
-  --bg-cover-mobile: url(https://katsudoto.id/media/template/nanda/01/bg-cover-mobile.png);
-  --bg-countdown: url(https://katsudoto.id/media/template/nanda/01/bg-countdown.png);
-  --bg-groom: url(https://katsudoto.id/media/template/nanda/01/bg-groom.png);
-  --bg-bride: url(https://katsudoto.id/media/template/nanda/01/bg-bride.png);
-  --bg-palace: url(https://katsudoto.id/media/template/nanda/01/palace.png);
-}
+
 body button:active,
 body button:focus {
   background-color: transparent;
@@ -1905,7 +1859,7 @@ section.protocol-04 .protocol-item-wrap .protocol-item .text-wrap .text {
   z-index: 999;
 }
 .music-outer .music-box {
-  background-image: url(https://katsudoto.id/media/template/details/music.png);
+  background-image: none;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 100% 100%;

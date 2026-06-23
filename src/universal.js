@@ -732,7 +732,7 @@ var goto_calculator = function (e) {
   e.preventDefault();
 
   var redirect = $(this).attr("href");
-  if (!redirect) redirect = "https://katsudoto.id/v2/package";
+  if (!redirect) redirect = "#";
 
   // Form Step
   var formStepGuest = {

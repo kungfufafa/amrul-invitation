@@ -741,8 +741,7 @@ var hideInfoTimeout,
         (this.state.backgroundMusic = e),
         null != this.state.loopStartTime &&
           null != this.state.loopEndTime &&
-          this.setupCustomLoop(),
-        this.initAudioContext();
+          this.setupCustomLoop();
     },
     getAudioType: function (e) {
       return (
@@ -775,6 +774,7 @@ var hideInfoTimeout,
         });
     },
     unlockAudio: function () {
+      this.initAudioContext();
       return this.state.isAudioUnlocked
         ? Promise.resolve()
         : new Promise((e, t) => {
@@ -1325,7 +1325,7 @@ var modal_video_options = {
     loop: 0,
     modestbranding: null,
     mute: 0,
-    origin: null,
+    origin: window.location.origin || null,
     playsinline: null,
     rel: 0,
     showinfo: 1,
@@ -1344,110 +1344,41 @@ function tryAutoplay(e) {
       : console.log("Autoplay blocked until user interaction."));
 }
 function startAutoplayVideo() {
-  const e = ".autoplay-video-box";
-  let t = [];
-  const n = {
-      controls: !0,
-      autoplay: !1,
-      muted: !0,
-      loop: !1,
-      disablePictureInPicture: !0,
-      playsinline: !0,
-      fluid: !0,
-      techOrder: ["youtube"],
-      youtube: { rel: 0, iv_load_policy: 3, cc_load_policy: 0, playsinline: 1 },
-    },
-    a = new IntersectionObserver((e) => {
-      e.forEach((e) => {
-        const n = $(e.target).attr("data-pos") || null,
-          a = t.find((e) => e.pos == n);
-        a &&
-          a.players.length &&
-          (e.isIntersecting
-            ? ($(e.target).attr("data-onview", !0),
-              a.currentPlayer
-                ? a.currentPlayer.paused() && tryAutoplay(a.currentPlayer)
-                : tryAutoplay(a.players[0].player))
-            : ($(e.target).attr("data-onview", !1),
-              a.currentPlayer &&
-                !a.currentPlayer.paused() &&
-                a.currentPlayer.pause(),
-              "function" == typeof playMusic && playMusic()));
+  // Handle local HTML5 video elements
+  document.querySelectorAll(".autoplay-video-section").forEach(function(section) {
+    var videos = section.querySelectorAll("video.local-video");
+    videos.forEach(function(video) {
+      // Pause background music when video plays (unmuted)
+      video.addEventListener("play", function() {
+        if (!video.muted && "function" == typeof pauseMusic) pauseMusic();
       });
-    }),
-    i = (i, o) => {
-      $(o).attr("data-onview", !1),
-        $(o).attr("data-pos", i),
-        t.push({ pos: i, currentPlayer: null, players: [] }),
-        a.observe(o),
-        $(o)
-          .find(".autoplay-video")
-          .each(function (a, o) {
-            ((a, i, o, s) => {
-              const r = $(s).attr("data-url");
-              $(s).attr("data-pos", o);
-              const l = t.find((e) => e.pos == a);
-              if (r && l) {
-                const t = document.createElement("video"),
-                  a = document.createElement("source");
-                (a.src = r),
-                  (a.type = "video/youtube"),
-                  (t.className = "video-js"),
-                  t.appendChild(a),
-                  s.appendChild(t);
-                const i = videojs(t, n);
-                l.players.push({ pos: o, player: i }),
-                  i.on("play", function () {
-                    l.currentPlayer &&
-                      l.currentPlayer.id_ !== i.id_ &&
-                      !l.currentPlayer.paused() &&
-                      l.currentPlayer.pause(),
-                      $(s).closest(e).addClass("is-playing"),
-                      $(s).addClass("show"),
-                      (l.currentPlayer = i);
-                  }),
-                  i.on("pause", function () {
-                    $(s).closest(e).removeClass("is-playing"),
-                      $(s).removeClass("show");
-                  }),
-                  i.on("ended", function () {
-                    if (
-                      ($(s).closest(e).removeClass("is-playing"),
-                      $(s).removeClass("show"),
-                      (l.currentPlayer = null),
-                      l.players.length > 1)
-                    ) {
-                      const e = o + 1,
-                        t = l.players.find((t) => t.pos == e);
-                      t && tryAutoplay(t.player);
-                    }
-                  }),
-                  i.on("volumechange", function () {
-                    i.muted()
-                      ? "function" == typeof playMusic && playMusic()
-                      : "function" == typeof pauseMusic && pauseMusic();
-                  }),
-                  i.on("error", function () {
-                    i.dispose();
-                    const e = l.players.findIndex((e) => e.pos == o);
-                    -1 !== e && l.players.splice(e, 1);
-                  }),
-                  $(s)
-                    .closest(e)
-                    .on("click", function (e) {
-                      e.target.closest(
-                        ".play-btn, .play-youtube-video, .autoplay-video"
-                      ) ||
-                        (i.paused() && tryAutoplay(i));
-                    });
-              }
-            })(i, 0, a, o);
-          });
-    };
-  $(".autoplay-video-section").each(function (e, t) {
-    i(e, t);
+      // Resume background music when video pauses or ends
+      video.addEventListener("pause", function() {
+        if ("function" == typeof playMusic) playMusic();
+      });
+      video.addEventListener("ended", function() {
+        if ("function" == typeof playMusic) playMusic();
+      });
+      video.addEventListener("volumechange", function() {
+        if (video.muted) {
+          if ("function" == typeof playMusic) playMusic();
+        } else if (!video.paused) {
+          if ("function" == typeof pauseMusic) pauseMusic();
+        }
+      });
+      // Auto-pause when scrolled out of view
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting && !video.paused) {
+            video.pause();
+          }
+        });
+      });
+      observer.observe(section);
+    });
   });
 }
+
 $(".play-btn").modalVideo(modal_video_options),
   $(".play-youtube-video").modalVideo(modal_video_options);
 var AOSOptions = {
@@ -2958,7 +2889,7 @@ $(".bankBtnAccordion").on("click", function () {
       particle_effect_speed: window.EFFECT_SPEED,
     };
     if (!e || 1 !== e.using_particle_effect) return;
-    const t = "https://katsudoto.id/media/assets/dashboard/fall-effect",
+    const t = "",
       n = {
         1: {
           preset: "object",
@@ -3187,7 +3118,7 @@ var e_invitation_handler = function (e) {
             scale: 1.5,
             letterRendering: !0,
             logging: !1,
-            proxy: "https://katsudoto.id/html2canvasproxy.php",
+            proxy: null,
             width: e.getElementById(o).scrollWidth,
             height: e.getElementById(o).scrollHeight,
             backgroundColor: "#ffffff",
