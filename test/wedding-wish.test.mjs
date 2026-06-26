@@ -35,6 +35,9 @@ test("getGuestName uses and normalizes the to URL parameter", () => {
   assert.equal(getGuestName("?to=Apriansyah%20%20Rahman"), "Apriansyah Rahman");
   assert.equal(getGuestName("??to=Apriansyah"), "Apriansyah");
   assert.equal(getGuestName("?to="), "");
+  assert.equal(getGuestName("?to=apriansyah-rizqi-setiawan"), "Apriansyah Rizqi Setiawan");
+  assert.equal(getGuestName("?to=APRIANSYAH_RIZQI_SETIAWAN"), "Apriansyah Rizqi Setiawan");
+  assert.equal(getGuestName("?to=apriansyah  rizqi  setiawan"), "Apriansyah Rizqi Setiawan");
 });
 
 test("pageWishes returns a stable newest-first page and cursor", () => {

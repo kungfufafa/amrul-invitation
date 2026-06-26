@@ -27,10 +27,23 @@ export function normalizeWish({ name, message }) {
 
 export function getGuestName(search) {
   const params = new URLSearchParams(search);
-  return String(params.get("to") ?? params.get("?to") ?? "")
-    .trim()
-    .replace(/\s+/g, " ")
-    .slice(0, MAX_NAME_LENGTH);
+  const rawName = String(params.get("to") ?? params.get("?to") ?? "").trim();
+  if (!rawName) return "";
+
+  // Replace hyphens and underscores with spaces
+  let name = rawName.replace(/[-_]+/g, " ");
+
+  // Normalise multiple spaces to a single space
+  name = name.replace(/\s+/g, " ");
+
+  // Convert to Title Case
+  name = name
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  return name.slice(0, MAX_NAME_LENGTH);
 }
 
 export function escapeHtml(value) {
